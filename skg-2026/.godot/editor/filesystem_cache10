@@ -1,5 +1,13 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784495728
+::res://::1784496083
 icon.svg::CompressedTexture2D::5511058242636260808::1784495682::1784495729::1::::<><><>0<>0<>6a14ab6c6b4c9879ffc88670dfe19e32<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Scenes/::1784495682
-main.tscn::PackedScene::8082121372004452290::1784495682::0::1::::<><><>0<>0<><>::
+::res://Assets/::1784495896
+::res://Assets/2D/::1784496349
+placeholderchar.png::CompressedTexture2D::3564242703701963602::1784496332::1784496333::1::::<><><>0<>0<>9a735b46cfd49ff8c28cf5dd3fc1c589<>res://.godot/imported/placeholderchar.png-7ce87203c1ab165cac797b050f424943.ctex::
+placeholderscore.png::CompressedTexture2D::2654930499747194021::1784496349::1784496349::1::::<><><>0<>0<>f502336abbd9cfe95e952639725106be<>res://.godot/imported/placeholderscore.png-be36bae3b6ccf1e06f24e4f8d21583d3.ctex::
+::res://Assets/3D/::1784495889
+::res://Assets/Audio/::1784495896
+::res://Scenes/::1784496296
+main.tscn::PackedScene::8082121372004452290::1784496296::0::1::::<><><>0<>0<><>::uid://djgqfsn5xijq5::::res://Scripts/main.gd
+::res://Scripts/::1784496292
+main.gd::GDScript::7804329278096625042::1784496292::0::1::::<>Node<><>0<>0<><>::
