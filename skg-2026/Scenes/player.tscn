@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://y6fr4t71pqff"]
+
+[ext_resource type="Texture2D" uid="uid://bq1ss6oebnan7" path="res://Assets/2D/placeholderchar.png" id="1_v0iea"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(0, 0, 16, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ganen"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvnsp")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D" unique_id=854722899]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=926354515]
+sprite_frames = SubResource("SpriteFrames_ganen")
+autoplay = "default"
