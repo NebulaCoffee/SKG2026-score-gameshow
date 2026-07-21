@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://domav2ro4dq8e"]
+
+[ext_resource type="Script" uid="uid://c7dwdfycy81hn" path="res://Scripts/high_score.gd" id="1_v2gce"]
+[ext_resource type="Texture2D" uid="uid://cj7chyc4lo1fk" path="res://Assets/2D/highscore3.png" id="2_3poor"]
+[ext_resource type="Theme" uid="uid://cm2hd6v7a4h2m" path="res://themes/score.tres" id="3_2ffdf"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ut623"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de6u8"]
+atlas = ExtResource("2_3poor")
+region = Rect2(0, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxrn8"]
+atlas = ExtResource("2_3poor")
+region = Rect2(26, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hmwv"]
+atlas = ExtResource("2_3poor")
+region = Rect2(52, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjj2e"]
+atlas = ExtResource("2_3poor")
+region = Rect2(78, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bccd2"]
+atlas = ExtResource("2_3poor")
+region = Rect2(0, 26, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gl3w"]
+atlas = ExtResource("2_3poor")
+region = Rect2(26, 26, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ye4h"]
+atlas = ExtResource("2_3poor")
+region = Rect2(52, 26, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2gce"]
+atlas = ExtResource("2_3poor")
+region = Rect2(26, 26, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3poor"]
+atlas = ExtResource("2_3poor")
+region = Rect2(52, 26, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ffdf"]
+atlas = ExtResource("2_3poor")
+region = Rect2(0, 0, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4cce"]
+atlas = ExtResource("2_3poor")
+region = Rect2(78, 26, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecckb"]
+atlas = ExtResource("2_3poor")
+region = Rect2(0, 52, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgiao"]
+atlas = ExtResource("2_3poor")
+region = Rect2(26, 52, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0nfr"]
+atlas = ExtResource("2_3poor")
+region = Rect2(52, 52, 26, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8wdx"]
+atlas = ExtResource("2_3poor")
+region = Rect2(0, 0, 26, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ganen"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_de6u8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxrn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hmwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjj2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bccd2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gl3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ye4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v2gce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3poor")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ffdf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a4cce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecckb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgiao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0nfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8wdx")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="HighScore" type="Node2D" unique_id=526240390]
+script = ExtResource("1_v2gce")
+
+[node name="scorebg" type="Sprite2D" parent="." unique_id=1779643351]
+self_modulate = Color(0.16470589, 0.16470589, 0.40784314, 1)
+position = Vector2(0, -3.9999998)
+scale = Vector2(48, 20)
+texture = SubResource("CanvasTexture_ut623")
+
+[node name="Score" type="RichTextLabel" parent="." unique_id=1488367336]
+offset_left = -21.0
+offset_top = -12.0
+offset_right = 22.0
+offset_bottom = 4.0
+theme = ExtResource("3_2ffdf")
+text = "000000000000"
+scroll_active = false
+
+[node name="CharacterAni" type="AnimatedSprite2D" parent="." unique_id=1478954225]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_ganen")
+autoplay = "default"
+frame = 14
+frame_progress = 0.8154613

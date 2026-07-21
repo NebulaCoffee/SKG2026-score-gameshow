@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://cm2hd6v7a4h2m"]
+
+[ext_resource type="FontFile" uid="uid://bygjkoh3ru3lu" path="res://Assets/Fonts/PixelOperator8.ttf" id="1_i0p4m"]
+
+[resource]
+RichTextLabel/font_sizes/normal_font_size = 8
+RichTextLabel/fonts/normal_font = ExtResource("1_i0p4m")
