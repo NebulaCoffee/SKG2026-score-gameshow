@@ -6,6 +6,7 @@ extends Node3D
 	$Score
 ]
 
+@onready var main_menu_control = $CanvasLayer/MainMenuControl
 @onready var splash_sprite = $SplashSprite
 
 @onready var music_stream_player = $MusicStreamPlayer
@@ -14,13 +15,16 @@ extends Node3D
 # Load SFX.
 var sfx_audience_cheer = load("res://Assets/Audio/SFX/audience-cheer.mp3")
 var sfx_audience_chatter = load("res://Assets/Audio/SFX/crowd-chatter.mp3")
+var sfx_pop = load("res://Assets/Audio/SFX/pop-rimshot.mp3")
+var music_menu = load("res://Assets/Audio/Music/menu_music.mp3")
 
 # Set where we want the title parts to end up.
 var current_title_part := 0
 
 var target_positions = [
-	Vector3(-0.48, 0.37, -1.68),Vector3(0, 0.37, -1.68),Vector3(0.47, 0.37, -1.68)
+	Vector3(-0.51, 0.2, -0.82),Vector3(-0.04, 0.2, -0.82),Vector3(0.42, 0.2, -0.82)
 ]
+
 var target_rotations = [
 	Vector3(0,0,0),	Vector3(0,0,26.0),	Vector3(0,0,0),
 ]
@@ -30,6 +34,7 @@ var speed := 24.0
 
 var time := 0.0
 var start_title_animation := false
+var idle_animation_begun := false
 
 func _ready():
 	for title in titles:
@@ -46,7 +51,7 @@ func start_sequence():
 	music_stream_player.play()
 	await get_tree().create_timer(2).timeout
 	sfx_stream_player.play()
-	await get_tree().create_timer(6).timeout
+	await get_tree().create_timer(5).timeout
 	start_title_animation = true
 
 func fade_out_and_remove():
@@ -83,9 +88,17 @@ func _process(delta):
 
 		if title.position.distance_to(target_position) < 0.05 && title.rotation.distance_to(target_rotation) < 0.05:
 			current_title_part += 1
+			sfx_stream_player.stream = sfx_pop
+			sfx_stream_player.play()
 
 	# Idle animation once everything has arrived.
 	else:
+		if not idle_animation_begun:
+			music_stream_player.stream = music_menu
+			music_stream_player.play()
+			idle_animation_begun = true
+			main_menu_control.visible = true
+		
 		for i in titles.size():
 			var title = titles[i]
 			var target_position = target_positions[i]
@@ -100,3 +113,7 @@ func _process(delta):
 			var scale_amount = 1.0 + sin(time * 1.5 + offset) * 0.02
 
 			title.scale = Vector3.ONE * scale_amount
+
+
+func _on_play_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/main.tscn")

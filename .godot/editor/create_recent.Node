@@ -1,4 +1,11 @@
 Sprite3D
+TextureRect
+Button
+VBoxContainer
+Control
+CanvasLayer
+SubViewport
+SubViewportContainer
 AudioStreamPlayer
 DirectionalLight3D
 Label3D

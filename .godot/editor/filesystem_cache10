@@ -1,30 +1,37 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784562315
+::res://::1784649223
 default_bus_layout.tres::AudioBusLayout::6203256926662493164::1784558386::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5511058242636260808::1784537868::1784541251::1::::<><><>0<>0<>6a14ab6c6b4c9879ffc88670dfe19e32<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+new_style_box_flat.tres::StyleBoxFlat::8961249304192220555::1784647754::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1784541279
-::res://Assets/2D/::1784560962
+::res://Assets/2D/::1784644795
 placeholderchar.png::CompressedTexture2D::3564242703701963602::1784537868::1784541251::1::::<><><>0<>0<>9a735b46cfd49ff8c28cf5dd3fc1c589<>res://.godot/imported/placeholderchar.png-7ce87203c1ab165cac797b050f424943.ctex::
 placeholderscore.png::CompressedTexture2D::2654930499747194021::1784537868::1784541251::1::::<><><>0<>0<>f502336abbd9cfe95e952639725106be<>res://.godot/imported/placeholderscore.png-be36bae3b6ccf1e06f24e4f8d21583d3.ctex::
+playerchar2.png::CompressedTexture2D::8540659699097934757::1784644777::1784644795::1::::<><><>0<>0<>8be642064bf2d565a10320a85b27c729<>res://.godot/imported/playerchar2.png-be862b9f0a482f0a95b4ab39ca71751c.ctex::
+playerchar2placehold.png::CompressedTexture2D::2790504723934099017::1784644777::1784644795::1::::<><><>0<>0<>b1d8bdcfdcba56964b10c12303cdf77f<>res://.godot/imported/playerchar2placehold.png-a8bf7e996b79ba82fe158f499a7e4352.ctex::
 SKGJamLogo.png::CompressedTexture2D::6961904316528594933::1784560901::1784560962::1::::<><><>0<>0<>e2b7353cb0763f685804364b85bc8608<>res://.godot/imported/SKGJamLogo.png-ff74dccde2f00180fbd5510e3fdcc625.s3tc.ctex::
 ::res://Assets/3D/::1784537868
 3D assets go here.txt::TextFile::-1::1784537868::0::1::::<><><>0<>0<><>::
 ::res://Assets/Audio/::1784558322
 Music and effects go here.txt::TextFile::-1::1784537868::0::1::::<><><>0<>0<><>::
-::res://Assets/Audio/Music/::1784562298
+::res://Assets/Audio/Music/::1784645609
 jingle.mp3::AudioStreamMP3::4072224838234547833::1784559598::1784559605::1::::<><><>0<>0<>ac76dbaa9cdf197b98da6cc00e79f664<>res://.godot/imported/jingle.mp3-659224d46048b081bb76b41ab0ac491f.mp3str::
-::res://Assets/Audio/SFX/::1784562315
+menu_music.mp3::AudioStreamMP3::3017988882094582599::1784645600::1784649224::1::::<><><>0<>0<>3fed1e7d079fd1fcc312dc7875c2abbd<>res://.godot/imported/menu_music.mp3-de7aa2bd8262de3b6df0da3c82ee4421.mp3str::
+::res://Assets/Audio/SFX/::1784645080
 audience-awww-sad.mp3::AudioStreamMP3::1266204101344425156::1784558347::1784558348::1::::<><><>0<>0<>9bc543d15a48e7e1068f2fd3854bf981<>res://.godot/imported/audience-awww-sad.mp3-ae26d6be63bb8a8204d71c6dc988ba30.mp3str::
 audience-cheer.mp3::AudioStreamMP3::8021896408407529946::1784558347::1784559881::1::::<><><>0<>0<>5c6caa27c55d1eebaab6d8db28eba2e9<>res://.godot/imported/audience-cheer.mp3-cad5484c8c4fb1db913c380e98898cbc.mp3str::
-crowd-chatter.mp3::AudioStreamMP3::1917158068495709956::1784561541::1784561560::1::::<><><>0<>0<>e696e2c22ca69811442f890679f8416c<>res://.godot/imported/crowd-chatter.mp3-762d9fdb1f32f9ad176f51a4501365d6.mp3str::
+crowd-chatter.mp3::AudioStreamMP3::1917158068495709956::1784645076::1784645080::1::::<><><>0<>0<>d4871520d8a870909f1e7d6e3b439dcb<>res://.godot/imported/crowd-chatter.mp3-762d9fdb1f32f9ad176f51a4501365d6.mp3str::
 fail-motif.mp3::AudioStreamMP3::4586794172040371372::1784558347::1784562315::1::::<><><>0<>0<>920702d5f5a8e5cef63ceb66fe90714f<>res://.godot/imported/fail-motif.mp3-cd741638e8b0d791fe94eccb993c6d29.mp3str::
-::res://Assets/Fonts/::1784557451
-LuckiestGuy-Regular.ttf::FontFile::6138780019422768159::1784541287::1784557451::1::::<><><>0<>0<>e8a7924263714043b6787b86ec742515<>res://.godot/imported/LuckiestGuy-Regular.ttf-96a87f43a55b4280ab9763470571b49c.fontdata::
-::res://Scenes/::1784541802
+pop-rimshot.mp3::AudioStreamMP3::4339283030574417556::1784644866::1784644896::1::::<><><>0<>0<>6ffc74e7c8b74897b64179a9b2e38c6e<>res://.godot/imported/pop-rimshot.mp3-9b6b123801dbde47090d8b27a56ef1ce.mp3str::
+::res://Assets/Fonts/::1784648743
+LuckiestGuy-Regular.ttf::FontFile::6138780019422768159::1784541287::1784649224::1::::<><><>0<>0<>20638f077a64085ab9b72bc08bef1bfc<>res://.godot/imported/LuckiestGuy-Regular.ttf-96a87f43a55b4280ab9763470571b49c.fontdata::
+::res://Scenes/::1784646158
 main.tscn::PackedScene::8082121372004452290::1784537868::0::1::::<><><>0<>0<><>::uid://djgqfsn5xijq5::::res://Scripts/main.gd
-player.tscn::PackedScene::1748863455166570439::1784537868::0::1::::<><><>0<>0<><>::uid://bq1ss6oebnan7::::res://Assets/2D/placeholderchar.png
-::res://Scenes/Title Screen/::1784562277
-title_subviewport.gd::GDScript::6973260303831507351::1784561578::0::1::::<>Node3D<><>0<>0<><>::
-title_subviewport.tscn::PackedScene::5198458141885100455::1784562277::0::1::::<><><>0<>0<><>::uid://c6l5twvmdp7i6::::res://Scenes/Title Screen/title_subviewport.gd<>uid://ctpw2snseu1rv::::res://Assets/Fonts/LuckiestGuy-Regular.ttf<>uid://byau7ibfhgjkb::::res://Assets/Audio/Music/jingle.mp3<>uid://c6gnsujf87bll::::res://Assets/2D/SKGJamLogo.png
-::res://Scripts/::1784537868
+main_menu.tscn::PackedScene::874042345794809080::1784646158::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::1748863455166570439::1784644777::0::1::::<><><>0<>0<><>::uid://cw77017130l24::::res://Scripts/player.gd<>uid://bf00g8dpwvw7j::::res://Assets/2D/playerchar2placehold.png
+::res://Scenes/Title Screen/::1784649126
+title_subviewport.gd::GDScript::6973260303831507351::1784648471::0::1::::<>Node3D<><>0<>0<><>::
+title_subviewport.tscn::PackedScene::5198458141885100455::1784649126::0::1::::<><><>0<>0<><>::uid://c6l5twvmdp7i6::::res://Scenes/Title Screen/title_subviewport.gd<>uid://ctpw2snseu1rv::::res://Assets/Fonts/LuckiestGuy-Regular.ttf<>uid://byau7ibfhgjkb::::res://Assets/Audio/Music/jingle.mp3<>uid://c6gnsujf87bll::::res://Assets/2D/SKGJamLogo.png<>uid://d0w5p4ur1vjd0::::res://new_style_box_flat.tres
+::res://Scripts/::1784644777
 main.gd::GDScript::7804329278096625042::1784537868::0::1::::<>Node<><>0<>0<><>::
+player.gd::GDScript::6385045020429556391::1784644777::0::1::::<>Node2D<><>0<>0<><>::

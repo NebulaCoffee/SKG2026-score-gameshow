@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://ctpw2snseu1rv" path="res://Assets/Fonts/LuckiestGuy-Regular.ttf" id="2_unoo8"]
 [ext_resource type="AudioStream" uid="uid://byau7ibfhgjkb" path="res://Assets/Audio/Music/jingle.mp3" id="3_unoo8"]
 [ext_resource type="Texture2D" uid="uid://c6gnsujf87bll" path="res://Assets/2D/SKGJamLogo.png" id="4_ae8te"]
+[ext_resource type="StyleBox" uid="uid://d0w5p4ur1vjd0" path="res://new_style_box_flat.tres" id="5_4rxic"]
 
 [sub_resource type="GDScript" id="GDScript_unoo8"]
 script/source = "extends AudioStreamPlayer
@@ -19,6 +20,46 @@ func _process(delta: float) -> void:
 	pass
 "
 
+[sub_resource type="Theme" id="Theme_ae8te"]
+default_font = ExtResource("2_unoo8")
+default_font_size = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rxic"]
+bg_color = Color(0.1882353, 0.15686275, 0.42745098, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 1
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 1
+corner_detail = 6
+expand_margin_top = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p6m1b"]
+bg_color = Color(0.1882353, 0.15686275, 0.42745098, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 1
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 1
+corner_detail = 6
+expand_margin_top = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_34fli"]
+bg_color = Color(0.1882353, 0.15686275, 0.42745098, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 1
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 1
+corner_detail = 6
+expand_margin_top = 4.0
+
+[sub_resource type="Gradient" id="Gradient_5xxrb"]
+offsets = PackedFloat32Array(0, 0.99291784)
+colors = PackedColorArray(1, 0.99215686, 0.92156863, 1, 0.69803923, 0.58431375, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7m0xi"]
+gradient = SubResource("Gradient_5xxrb")
+width = 4000
+height = 8000
+
 [node name="TitleSubviewport" type="Node3D" unique_id=1805222823]
 script = ExtResource("1_j0pgt")
 
@@ -26,30 +67,37 @@ script = ExtResource("1_j0pgt")
 
 [node name="Chase" type="Label3D" parent="." unique_id=64142222]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -16.266731)
+shaded = true
+texture_filter = 0
+outline_render_priority = 1
 modulate = Color(0.37254903, 0.77254903, 1, 1)
 outline_modulate = Color(0.3254902, 0.30588236, 0.8509804, 1)
 text = "Chase"
 font = ExtResource("2_unoo8")
 font_size = 46
-outline_size = 8
+outline_size = 4
 
 [node name="That" type="Label3D" parent="." unique_id=771530465]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16.266731)
+texture_filter = 0
+outline_render_priority = 1
 modulate = Color(1, 0.9882353, 0.78431374, 1)
 outline_modulate = Color(0.8132584, 0.7147984, 2.695322e-06, 1)
 text = "that"
 font = ExtResource("2_unoo8")
 font_size = 24
-outline_size = 8
+outline_size = 4
 
 [node name="Score" type="Label3D" parent="." unique_id=36934686]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -16.266731)
+texture_filter = 0
+outline_render_priority = 1
 modulate = Color(0.37254903, 0.77254903, 1, 1)
 outline_modulate = Color(0.3254902, 0.30588236, 0.8509804, 1)
 text = "score"
 font = ExtResource("2_unoo8")
 font_size = 46
-outline_size = 8
+outline_size = 4
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=253347513]
 
@@ -64,3 +112,49 @@ bus = &"SFX"
 [node name="SplashSprite" type="Sprite3D" parent="." unique_id=2103661602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.7752018)
 texture = ExtResource("4_ae8te")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=712447347]
+
+[node name="MainMenuControl" type="Control" parent="CanvasLayer" unique_id=1198241636]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MainMenuControl" unique_id=2008969674]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -25.0
+offset_top = -50.0
+offset_right = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="PlayButton" type="Button" parent="CanvasLayer/MainMenuControl/VBoxContainer" unique_id=1335434609]
+layout_mode = 2
+theme = SubResource("Theme_ae8te")
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(1, 0.9254902, 0.5137255, 1)
+theme_override_colors/font_focus_color = Color(1, 0.9882353, 0.78431374, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.9882353, 0.78431374, 1)
+theme_override_colors/font_hover_color = Color(1, 0.9882353, 0.78431374, 1)
+theme_override_colors/font_outline_color = Color(0.1882353, 0.15686275, 0.42745098, 1)
+theme_override_constants/outline_size = 2
+theme_override_styles/normal = ExtResource("5_4rxic")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4rxic")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p6m1b")
+theme_override_styles/focus = SubResource("StyleBoxFlat_34fli")
+text = "play"
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=583593130]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, -15.589066)
+texture = SubResource("GradientTexture2D_7m0xi")
+
+[connection signal="pressed" from="CanvasLayer/MainMenuControl/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
