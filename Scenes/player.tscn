@@ -7,17 +7,21 @@
 atlas = ExtResource("2_cvnsp")
 region = Rect2(0, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
 atlas = ExtResource("2_cvnsp")
-region = Rect2(48, 0, 24, 24)
+region = Rect2(0, 24, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
 atlas = ExtResource("2_cvnsp")
 region = Rect2(24, 0, 24, 24)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
+atlas = ExtResource("2_cvnsp")
+region = Rect2(24, 24, 24, 24)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
 atlas = ExtResource("2_cvnsp")
-region = Rect2(72, 0, 24, 24)
+region = Rect2(48, 0, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ganen"]
 animations = [{
@@ -31,7 +35,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vgqql")
+"texture": SubResource("AtlasTexture_cvnsp")
 }],
 "loop": 2,
 "name": &"jump",
@@ -47,10 +51,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_vgqql")
+}],
+"loop": 2,
+"name": &"skid",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_x3wgy")
 }],
 "loop": 1,
-"name": &"skid",
+"name": &"slowing",
 "speed": 5.0
 }]
 
@@ -60,13 +72,13 @@ size = Vector2(12, 17)
 [node name="Player" type="Node2D" unique_id=854722899]
 script = ExtResource("1_cvnsp")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=926354515]
+[node name="PlayerAni" type="AnimatedSprite2D" parent="." unique_id=926354515]
 sprite_frames = SubResource("SpriteFrames_ganen")
-animation = &"idle"
+animation = &"slowing"
 autoplay = "idle"
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1240418747]
+[node name="PlayerChar" type="CharacterBody2D" parent="." unique_id=1240418747]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2085468993]
+[node name="PlayerCol" type="CollisionShape2D" parent="PlayerChar" unique_id=2085468993]
 position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_ganen")
