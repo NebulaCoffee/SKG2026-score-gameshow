@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bgy2d6txygbh5"]
+
+[ext_resource type="Texture2D" uid="uid://ntq8syiur2qc" path="res://Assets/3D/Textures/soilentbillboard.png" id="1_78b4l"]
+
+[resource]
+albedo_texture = ExtResource("1_78b4l")
+texture_filter = 0
+texture_repeat = false

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://domav2ro4dq8e" path="res://Scenes/high_score.tscn" id="1_wni78"]
 [ext_resource type="PackedScene" uid="uid://y6fr4t71pqff" path="res://Scenes/player.tscn" id="2_nes3m"]
 [ext_resource type="PackedScene" uid="uid://dbhcodxrxq1f" path="res://Assets/3D/LevelGeom/FlyingCar.fbx" id="3_nes3m"]
-[ext_resource type="PackedScene" uid="uid://be8h8x5b3h4jk" path="res://Assets/3D/LevelGeom/Billboard.fbx" id="3_vy56e"]
+[ext_resource type="PackedScene" uid="uid://c3t04cylur1gh" path="res://Scenes/LevelGeometry/Billboard.tscn" id="5_0pdfm"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ganen"]
 
@@ -16,9 +16,6 @@ speed = 80
 [node name="Player" parent="." unique_id=854722899 instance=ExtResource("2_nes3m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.60614, 3.1065483, 0)
 
-[node name="Billboard" parent="." unique_id=351189854 instance=ExtResource("3_vy56e")]
-transform = Transform3D(550.7081, 0, 0, 0, 430.03134, 0, 0, 0, 100, 346.9824, 29.88956, -24.662262)
-
 [node name="StaticBody2D" type="StaticBody3D" parent="." unique_id=48278438]
 
 [node name="CollisionShape2D" type="CollisionShape3D" parent="StaticBody2D" unique_id=1428262338]
@@ -27,3 +24,21 @@ shape = SubResource("WorldBoundaryShape3D_ganen")
 
 [node name="FlyingCar" parent="." unique_id=664029339 instance=ExtResource("3_nes3m")]
 transform = Transform3D(500, 0, 0, 0, 500, 0, 0, 0, 500, 25.329697, -11.753475, 6.751808)
+
+[node name="billboard1" parent="." unique_id=39722285 instance=ExtResource("5_0pdfm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 133.31168, -6)
+
+[node name="billboard2" parent="." unique_id=605454345 instance=ExtResource("5_0pdfm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 212.03394, 133.31168, -6)
+
+[node name="billboard3" parent="." unique_id=1638044242 instance=ExtResource("5_0pdfm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 486.96628, 123.44275, -6)
+
+[node name="billboard4" parent="." unique_id=1188679 instance=ExtResource("5_0pdfm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 706.4426, 123.44275, -162.96722)
+
+[node name="billboard5" parent="." unique_id=2088629671 instance=ExtResource("5_0pdfm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.40192, 123.44275, -93.44339)
+
+[node name="billboard6" parent="." unique_id=1619209244 instance=ExtResource("5_0pdfm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 415.96408, 123.44275, -194.3088)

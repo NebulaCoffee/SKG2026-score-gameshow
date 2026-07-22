@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c3t04cylur1gh"]
 
 [ext_resource type="PackedScene" uid="uid://be8h8x5b3h4jk" path="res://Assets/3D/LevelGeom/Billboard.fbx" id="1_qvlyl"]
+[ext_resource type="Script" uid="uid://dit4wconyqg0x" path="res://Scripts/billboard.gd" id="2_emdf4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cmxda"]
 size = Vector3(0.19636917, 0.08181572, 0.03753662)
@@ -9,6 +10,7 @@ size = Vector3(0.19636917, 0.08181572, 0.03753662)
 
 [node name="Billboard" parent="." unique_id=1772692309 instance=ExtResource("1_qvlyl")]
 transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 324.43475, 0, 0)
+script = ExtResource("2_emdf4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Billboard" unique_id=2015877864]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, -0.2263497, -0.041481003, 0.0021972642)

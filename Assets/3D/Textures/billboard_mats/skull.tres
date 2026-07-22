@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://brbd3ms1wds1u"]
+
+[ext_resource type="Texture2D" uid="uid://2k30jri4clm0" path="res://Assets/3D/Textures/skullbillboard.png" id="1_cieq3"]
+
+[resource]
+albedo_texture = ExtResource("1_cieq3")
+texture_filter = 0
+texture_repeat = false

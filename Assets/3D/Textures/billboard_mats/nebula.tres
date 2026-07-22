@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c20oasaan30hu"]
+
+[ext_resource type="Texture2D" uid="uid://dneo6cm06ybt1" path="res://Assets/3D/Textures/nebulabillboard.png" id="1_inxqs"]
+
+[resource]
+albedo_texture = ExtResource("1_inxqs")
+texture_filter = 0
+texture_repeat = false
