@@ -4,7 +4,7 @@ extends Node3D
 @onready var player_ani: AnimatedSprite3D = $PlayerChar/PlayerAni
 @onready var player_char: CharacterBody3D = $PlayerChar
 @onready var player_col: CollisionShape3D = $PlayerChar/PlayerCol
-@onready var camera_3d: Camera3D = $PlayerChar/SpringArm3D/Camera3D
+@onready var camera_3d: Camera3D = $PlayerChar/PlayerCam/Camera3D
 
 # Variables
 @export var speed: int # Determines the current speed of the character
