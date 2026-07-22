@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwr56r4mf4i0h"
-path.s3tc="res://.godot/imported/Sign UV TexPlaceholder.jpg-307c2a81734fdd54c4a73135169a2164.s3tc.ctex"
+uid="uid://cqten5fnqnr64"
+path.s3tc="res://.godot/imported/Sign UV TexPlaceholder.jpg-7fb6a867c97b1ad6d8d36c6d6d0c1547.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/3D/Textures/Sign UV TexPlaceholder.jpg"
-dest_files=["res://.godot/imported/Sign UV TexPlaceholder.jpg-307c2a81734fdd54c4a73135169a2164.s3tc.ctex"]
+source_file="res://Assets/3D/textures/Sign UV TexPlaceholder.jpg"
+dest_files=["res://.godot/imported/Sign UV TexPlaceholder.jpg-7fb6a867c97b1ad6d8d36c6d6d0c1547.s3tc.ctex"]
 
 [params]
 

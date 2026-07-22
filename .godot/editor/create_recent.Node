@@ -1,3 +1,7 @@
+Area3D
+CollisionPolygon3D
+StaticBody3D
+CollisionShape3D
 Sprite3D
 TextureRect
 Button
@@ -8,6 +12,3 @@ SubViewport
 SubViewportContainer
 AudioStreamPlayer
 DirectionalLight3D
-Label3D
-Camera3D
-AnimatedSprite2D

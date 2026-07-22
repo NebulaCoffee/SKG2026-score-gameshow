@@ -1,1 +1,8 @@
-res://Scenes/Title Screen/title_subviewport.tscn
+res://main_theme.tres
+res://Scenes/GameplayTest.tscn
+res://Scenes/LevelGeometry/SlantedRoof1.tscn
+res://Scenes/LevelGeometry/Billboard.tscn
+res://Scenes/LevelGeometry/SlantedRoof2.tscn
+res://Scenes/LevelGeometry/FlyingBus.tscn
+res://Scenes/LevelGeometry/FlyingCar.tscn
+res://Scenes/LevelChunks/TestChunk.tscn
