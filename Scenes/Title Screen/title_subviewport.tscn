@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://c6l5twvmdp7i6" path="res://Scenes/Title Screen/title_subviewport.gd" id="1_j0pgt"]
 [ext_resource type="FontFile" uid="uid://ctpw2snseu1rv" path="res://Assets/Fonts/LuckiestGuy-Regular.ttf" id="2_unoo8"]
-[ext_resource type="AudioStream" uid="uid://byau7ibfhgjkb" path="res://Assets/Audio/Music/jingle.mp3" id="3_unoo8"]
+[ext_resource type="AudioStream" uid="uid://cog0uy2vnjj8h" path="res://Assets/Audio/Music/title_screen.mp3" id="3_p6m1b"]
 [ext_resource type="Texture2D" uid="uid://c6gnsujf87bll" path="res://Assets/2D/SKGJamLogo.png" id="4_ae8te"]
 [ext_resource type="StyleBox" uid="uid://d0w5p4ur1vjd0" path="res://new_style_box_flat.tres" id="5_4rxic"]
+[ext_resource type="Texture2D" uid="uid://1ldb1pofnli3" path="res://Assets/2D/DevLogos.png" id="5_p6m1b"]
+[ext_resource type="Script" uid="uid://drhux5re3d88r" path="res://Scenes/Title Screen/main_menu_control.gd" id="6_34fli"]
+[ext_resource type="LabelSettings" uid="uid://b5ejruhag8iym" path="res://settings_label.tres" id="8_dgxmp"]
+[ext_resource type="Theme" uid="uid://cvxbrbw5yageg" path="res://main_theme.tres" id="9_njgyr"]
 
 [sub_resource type="GDScript" id="GDScript_unoo8"]
 script/source = "extends AudioStreamPlayer
@@ -102,7 +106,7 @@ outline_size = 4
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=253347513]
 
 [node name="MusicStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=268520028]
-stream = ExtResource("3_unoo8")
+stream = ExtResource("3_p6m1b")
 bus = &"Music"
 script = SubResource("GDScript_unoo8")
 
@@ -112,6 +116,11 @@ bus = &"SFX"
 [node name="SplashSprite" type="Sprite3D" parent="." unique_id=2103661602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.7752018)
 texture = ExtResource("4_ae8te")
+
+[node name="DevLogoSprite" type="Sprite3D" parent="." unique_id=1912008944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.776)
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("5_p6m1b")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=712447347]
 
@@ -123,6 +132,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("6_34fli")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MainMenuControl" unique_id=2008969674]
 layout_mode = 1
@@ -152,6 +162,37 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_4rxic")
 theme_override_styles/hover = SubResource("StyleBoxFlat_p6m1b")
 theme_override_styles/focus = SubResource("StyleBoxFlat_34fli")
 text = "play"
+
+[node name="AudioSettingsVBoxContainer" type="VBoxContainer" parent="CanvasLayer/MainMenuControl" unique_id=1875957317]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 98.0
+offset_right = 82.0
+offset_bottom = 160.0
+
+[node name="MusicSliderLabel" type="Label" parent="CanvasLayer/MainMenuControl/AudioSettingsVBoxContainer" unique_id=1843355964]
+layout_mode = 2
+text = "Music"
+label_settings = ExtResource("8_dgxmp")
+horizontal_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="CanvasLayer/MainMenuControl/AudioSettingsVBoxContainer" unique_id=1169483366]
+custom_maximum_size = Vector2(-1, 10)
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("9_njgyr")
+value = 100.0
+
+[node name="SFXSliderLabel" type="Label" parent="CanvasLayer/MainMenuControl/AudioSettingsVBoxContainer" unique_id=2038510671]
+layout_mode = 2
+text = "Sounds"
+label_settings = ExtResource("8_dgxmp")
+horizontal_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="CanvasLayer/MainMenuControl/AudioSettingsVBoxContainer" unique_id=1380582668]
+layout_mode = 2
+theme = ExtResource("9_njgyr")
+value = 100.0
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=583593130]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, -15.589066)
