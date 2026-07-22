@@ -30,12 +30,11 @@ func _process(delta: float) -> void:
 		await get_tree().create_timer(1).timeout
 		_set_ani("running",1)
 		running = true
-	#print(camera_3d.position)
 	
 	speed += 0.1
 	player_ani.speed_scale += (speed/100)
-	if player_ani.speed_scale > 50:
-		player_ani.speed_scale = 50
+	if player_ani.speed_scale > 25:
+		player_ani.speed_scale = 25
 	if Input.is_action_just_pressed("ui_right"):
 		_set_ani("running",5)
 	if Input.is_action_just_pressed("ui_left"):
@@ -44,6 +43,9 @@ func _process(delta: float) -> void:
 		jump()
 	if Input.is_action_just_pressed("slide"):
 		slide()
+	#if player_char.velocity.y <= -1:
+		#falling()
+		
 
 # Function for changing the player speed and current animation
 func _set_ani(ani : String, spd : int)->void:
@@ -72,7 +74,7 @@ func jump()->void:
 	_set_ani("jump", 5)
 	await player_ani.animation_finished
 	_set_ani("jump_loop",0)
-	await get_tree().create_timer(0.1).timeout
+	await get_tree().create_timer(0.5).timeout
 	normal()
 	
 func normal() -> void:
@@ -84,3 +86,7 @@ func stop() -> void:
 	player_col.shape.size = defult_col
 	speed = 0
 	_set_ani("idle",0)
+
+func falling()-> void:
+	_set_ani("falling",0)
+	#player_ani.rotation.z =-45

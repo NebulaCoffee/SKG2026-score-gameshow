@@ -6,6 +6,14 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_ganen"]
 size = Vector3(0.11779785, 0.17059326, 1)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuaoq"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(24, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wohnl"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(0, 72, 24, 24)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
 atlas = ExtResource("2_6t5aa")
 region = Rect2(0, 0, 24, 24)
@@ -124,6 +132,17 @@ region = Rect2(0, 24, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ganen"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xuaoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wohnl")
+}],
+"loop": 1,
+"name": &"fall",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fkybt")
@@ -271,9 +290,8 @@ shape = SubResource("BoxShape3D_ganen")
 pixel_size = 1.0
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ganen")
-animation = &"idle"
+animation = &"fall"
 autoplay = "idle"
-frame_progress = 0.24715881
 
 [node name="PlayerCam" type="SpringArm3D" parent="PlayerChar" unique_id=2047679234]
 shape = SubResource("BoxShape3D_lyy7e")
