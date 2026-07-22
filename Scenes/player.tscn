@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://cw77017130l24" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://dtxfogs8vdi5b" path="res://Assets/2D/playerchar2.png" id="2_6t5aa"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ganen"]
+size = Vector3(0.11779785, 0.17059326, 1)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
 atlas = ExtResource("2_6t5aa")
 region = Rect2(0, 0, 24, 24)
@@ -249,19 +252,36 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ganen"]
-size = Vector2(12, 17)
+[sub_resource type="BoxShape3D" id="BoxShape3D_lyy7e"]
+margin = 5.0
+size = Vector3(10, 10, 0)
 
-[node name="Player" type="Node2D" unique_id=854722899]
+[node name="Player" type="Node3D" unique_id=1916690834]
 script = ExtResource("1_cvnsp")
+speed = 5
+jumpspeed = -250
 
-[node name="PlayerAni" type="AnimatedSprite2D" parent="." unique_id=926354515]
+[node name="PlayerChar" type="CharacterBody3D" parent="." unique_id=1271370435]
+
+[node name="PlayerCol" type="CollisionShape3D" parent="PlayerChar" unique_id=108835559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0014038086, -0.033721924, 0)
+shape = SubResource("BoxShape3D_ganen")
+
+[node name="PlayerAni" type="AnimatedSprite3D" parent="PlayerChar" unique_id=761490801]
+pixel_size = 1.0
+texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_ganen")
-animation = &"running"
+animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.24715881
 
-[node name="PlayerChar" type="CharacterBody2D" parent="." unique_id=1240418747]
+[node name="PlayerCam" type="SpringArm3D" parent="PlayerChar" unique_id=2047679234]
+shape = SubResource("BoxShape3D_lyy7e")
+spring_length = 100.0
 
-[node name="PlayerCol" type="CollisionShape2D" parent="PlayerChar" unique_id=2085468993]
-position = Vector2(0, 3.5)
-shape = SubResource("RectangleShape2D_ganen")
+[node name="Camera3D" type="Camera3D" parent="PlayerChar/PlayerCam" unique_id=1100971351]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 100)
+h_offset = 100.0
+v_offset = 50.0
+current = true
+near = 0.5
