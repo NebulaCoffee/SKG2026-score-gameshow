@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b0lufifr3301b"]
+
+[ext_resource type="PackedScene" uid="uid://c3t04cylur1gh" path="res://Scenes/LevelGeometry/Billboard.tscn" id="1_ihy6g"]
+
+[node name="Node3D" type="Node3D" unique_id=2125187877]
+
+[node name="Node3D" parent="." unique_id=39722285 instance=ExtResource("1_ihy6g")]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=317662281]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 196.58234, 0, 0)

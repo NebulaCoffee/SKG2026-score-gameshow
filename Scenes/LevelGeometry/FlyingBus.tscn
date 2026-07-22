@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b4y88l2sque1e"]
+
+[ext_resource type="PackedScene" uid="uid://bg2ye6dxdg77w" path="res://Assets/3D/LevelGeom/FlyingBus.fbx" id="1_0tp7c"]
+
+[node name="Node3D" type="Node3D" unique_id=197974158]
+
+[node name="FlyingBus" parent="." unique_id=518936506 instance=ExtResource("1_0tp7c")]
+transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 20.14708, -54.232876, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FlyingBus" unique_id=698056008]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0.06734675, 0.023441134, 0)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="FlyingBus/StaticBody3D" unique_id=1522560542]
+depth = 0.045
+polygon = PackedVector2Array(0.08545805, 0.030297779, 0.029915981, 0.030313935, 0.029596984, 0.021700934, -0.029737003, 0.021062933, -0.030694019, 0.030632935, -0.08794723, 0.030166525, -0.08817282, -0.019866131, -0.07665092, -0.01983396, -0.07673717, -0.027942274, -0.0370534, -0.027987003, -0.037028998, -0.0195745, 0.034672633, -0.019711964, 0.03484515, -0.027820282, 0.07429231, -0.027999833, 0.07429231, -0.019589614, 0.08560426, -0.019542612)

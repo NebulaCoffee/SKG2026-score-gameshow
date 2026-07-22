@@ -1,65 +1,79 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784652194
-default_bus_layout.tres::AudioBusLayout::6203256926662493164::1784652071::0::1::::<><><>0<>0<><>::
-icon.svg::CompressedTexture2D::5511058242636260808::1784652071::1784652194::1::::<><><>0<>0<>6a14ab6c6b4c9879ffc88670dfe19e32<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-new_style_box_flat.tres::StyleBoxFlat::8961249304192220555::1784652071::0::1::::<><><>0<>0<><>::
-::res://Assets/::1784652071
-::res://Assets/2D/::1784652195
-placeholderchar.png::CompressedTexture2D::3564242703701963602::1784652071::1784652194::1::::<><><>0<>0<>9a735b46cfd49ff8c28cf5dd3fc1c589<>res://.godot/imported/placeholderchar.png-7ce87203c1ab165cac797b050f424943.ctex::
-placeholderscore.png::CompressedTexture2D::2654930499747194021::1784652071::1784652194::1::::<><><>0<>0<>f502336abbd9cfe95e952639725106be<>res://.godot/imported/placeholderscore.png-be36bae3b6ccf1e06f24e4f8d21583d3.ctex::
-playerchar2.png::CompressedTexture2D::8540659699097934757::1784652071::1784652194::1::::<><><>0<>0<>8be642064bf2d565a10320a85b27c729<>res://.godot/imported/playerchar2.png-be862b9f0a482f0a95b4ab39ca71751c.ctex::
-playerchar2placehold.png::CompressedTexture2D::2790504723934099017::1784652071::1784652194::1::::<><><>0<>0<>b1d8bdcfdcba56964b10c12303cdf77f<>res://.godot/imported/playerchar2placehold.png-a8bf7e996b79ba82fe158f499a7e4352.ctex::
-SKGJamLogo.png::CompressedTexture2D::6961904316528594933::1784652071::1784652195::1::::<><><>0<>0<>e2b7353cb0763f685804364b85bc8608<>res://.godot/imported/SKGJamLogo.png-ff74dccde2f00180fbd5510e3fdcc625.s3tc.ctex::
-::res://Assets/3D/::1784652218
-3D assets go here.txt::TextFile::-1::1784652071::0::1::::<><><>0<>0<><>::
-::res://Assets/3D/BackgroundAssets/::1784652218
-Building1.fbx::PackedScene::2670627161213912329::1784652218::1784652223::1::::<><><>0<>0<>dc6a92d08a76baca03f0843d770fbf25<>res://.godot/imported/Building1.fbx-3b792bfb8bd17b0b269a725fdf17c13e.scn::
-Building1WithSign.fbx::PackedScene::7964148087127288272::1784652218::1784652223::1::::<><><>0<>0<>2009582af687fdcd4f06e1e042599cb9<>res://.godot/imported/Building1WithSign.fbx-82c215a2cefc3516415bba69558a021e.scn::uid://cwr56r4mf4i0h::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
-Building2.fbx::PackedScene::8082121094117861088::1784652218::1784652223::1::::<><><>0<>0<>8453631c2d3947d2445df3b6c7bfe3de<>res://.godot/imported/Building2.fbx-4041ddff31eadc09bdb297b9384b191e.scn::
-Building2WithSign.fbx::PackedScene::8928360770587162244::1784652218::1784652223::1::::<><><>0<>0<>b61b4c2f17f0981699ceaa7a294e9ef1<>res://.godot/imported/Building2WithSign.fbx-0010a32e672c1c405e1bfbb2b18ee790.scn::uid://cwr56r4mf4i0h::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
-Building3.fbx::PackedScene::2039055211853898218::1784652218::1784652222::1::::<><><>0<>0<>5cabd1e84298baa73bef36f5e8ef9b21<>res://.godot/imported/Building3.fbx-5e6bfd85c683616080e6cd9e84da5966.scn::
-Building3WithSign.fbx::PackedScene::3490670515453001215::1784652218::1784652222::1::::<><><>0<>0<>e495c5a5387ff5fd7bcb37846eadc7ec<>res://.godot/imported/Building3WithSign.fbx-3c70f1948dae129139f53545fa59242d.scn::uid://cwr56r4mf4i0h::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
-Sign.fbx::PackedScene::365207985839315007::1784652218::1784652222::1::::<><><>0<>0<>4e0ea60c6d54f84b228208d5ee8efc16<>res://.godot/imported/Sign.fbx-c659bdb0489639a218da51955d799b65.scn::uid://cwr56r4mf4i0h::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
-::res://Assets/3D/LevelGeom/::1784652218
-Billboard.fbx::PackedScene::2735785728741777608::1784652218::1784652222::1::::<><><>0<>0<>352267556c628503e4d2187a96b4895f<>res://.godot/imported/Billboard.fbx-70b4c056767c1102646f55b886c39321.scn::uid://b6dj8sgcmhg6j::::res://Assets/3D/textures/BillboardUVPlaceholder.jpg
-FlyingBus.fbx::PackedScene::2864757929790489430::1784652218::1784652222::1::::<><><>0<>0<>64684faf987b083adbf69ba35ea1ad66<>res://.godot/imported/FlyingBus.fbx-058caf4fb502b1dea588817b95853ccf.scn::uid://bc8ksx71i6l7r::::res://Assets/3D/textures/BusUVTex.jpg
-FlyingCar.fbx::PackedScene::213060240235303073::1784652218::1784652221::1::::<><><>0<>0<>d69a20e86fb6e0b7f9a03518e520ab85<>res://.godot/imported/FlyingCar.fbx-fe6db3a2015ea510670770332d8683e5.scn::uid://p56y7h4ehwnm::::res://Assets/3D/textures/FloatingCarUVTex.jpg
-SlantedRoof1.fbx::PackedScene::5214558522755839840::1784652218::1784652221::1::::<><><>0<>0<>dbd14317991c16c70aa6032bdfbecd4c<>res://.godot/imported/SlantedRoof1.fbx-9a2c130e5850065526b118bb521204e2.scn::uid://be6kymmmodi2c::::res://Assets/3D/textures/SlantedRoofUVTexCol.jpg
-SlantedRoof2.fbx::PackedScene::6985706170421844::1784652218::1784652221::1::::<><><>0<>0<>c3f3f250660e05c4d39c187dde1df56d<>res://.godot/imported/SlantedRoof2.fbx-503189cb174b876fbf2d17e013135617.scn::uid://cv6b5umimsllb::::res://Assets/3D/textures/ForwardFacingRoofUVTex.jpg
-::res://Assets/3D/Textures/::1784652218
-BillboardUVPlaceholder.jpg::CompressedTexture2D::4569074308664363127::1784652218::1784652219::1::::<><><>0<>0<>bc7919b648fdee54680e10318f2c5385<>res://.godot/imported/BillboardUVPlaceholder.jpg-565ac93c98ced0134fed71799736665c.s3tc.ctex::
-BusUVTex.jpg::CompressedTexture2D::2595563409735129781::1784652218::1784652219::1::::<><><>0<>0<>f81570e5074131e43f82e27af9897a06<>res://.godot/imported/BusUVTex.jpg-b7b0926e410a84a3fbf2aa6dbdd6f201.s3tc.ctex::
-FloatingCarUVTex.jpg::CompressedTexture2D::1116690765905866102::1784652218::1784652219::1::::<><><>0<>0<>9d02de3cf05016a2bbfb7fbc5f352449<>res://.godot/imported/FloatingCarUVTex.jpg-773c992d74e83a67d943e0253d04b2cd.s3tc.ctex::
-ForwardFacingRoofUVTex.jpg::CompressedTexture2D::6310918154355544435::1784652218::1784652219::1::::<><><>0<>0<>1f2cac4f03899922fa043329c91afc93<>res://.godot/imported/ForwardFacingRoofUVTex.jpg-13f31b14cd953ad1131954cc275a1fbd.s3tc.ctex::
-Sign UV TexPlaceholder.jpg::CompressedTexture2D::6353968156885313649::1784652218::1784652219::1::::<><><>0<>0<>2cd030088344e7e1fc875846e7af846f<>res://.godot/imported/Sign UV TexPlaceholder.jpg-307c2a81734fdd54c4a73135169a2164.s3tc.ctex::
-SlantedRoofUVTexCol.jpg::CompressedTexture2D::2731822446984382384::1784652218::1784652219::1::::<><><>0<>0<>64ec6e884b472ba8a78064d977d8da5f<>res://.godot/imported/SlantedRoofUVTexCol.jpg-dca4cfd4bb85b8bf71f42de43dcd4630.s3tc.ctex::
-::res://Assets/3D/Textures/TextureTemplates/::1784652219
-BillboardUVTemplate.jpg::CompressedTexture2D::6483497558346656649::1784652219::1784652220::1::::<><><>0<>0<>4b84d07a35a718838f12da3ab0993116<>res://.godot/imported/BillboardUVTemplate.jpg-4998546e6ae9c6f96c6c624f1344bf14.ctex::
-FlyingBusUVTemplate.jpg::CompressedTexture2D::721815928372325763::1784652219::1784652220::1::::<><><>0<>0<>476af2ee706acdd2c707069ece8c90a0<>res://.godot/imported/FlyingBusUVTemplate.jpg-7eb42ea44aaf6828afd8ce0e1f334b28.ctex::
-FlyingCarUVTemplate.jpg::CompressedTexture2D::795104461052798727::1784652219::1784652220::1::::<><><>0<>0<>db49a3ae51deae0885bd3e2c6048d2d6<>res://.godot/imported/FlyingCarUVTemplate.jpg-0e3cdf57d77782bcbcb0b0fd6cd13579.ctex::
-Sign UV Template.jpg::CompressedTexture2D::2659220695009853509::1784652219::1784652220::1::::<><><>0<>0<>ff73ef93ec4598df05bb6bd8273c643f<>res://.godot/imported/Sign UV Template.jpg-6db79d3cb32851910fabea0abd320746.ctex::
-SlantedRoof1UVTemplate.jpg::CompressedTexture2D::2356133667518751742::1784652219::1784652220::1::::<><><>0<>0<>95e692aa59689cf16f6143f750725f0f<>res://.godot/imported/SlantedRoof1UVTemplate.jpg-5f8a84fc52f5b443342b6d3e42c1f7f8.ctex::
-SlantedRoof2UVTemplate.jpg::CompressedTexture2D::6617018070394235159::1784652219::1784652219::1::::<><><>0<>0<>6fb0790c84ae0426e28781a02a0a93bd<>res://.godot/imported/SlantedRoof2UVTemplate.jpg-9ec66bf803d221f1cdcc0e9e180d8339.ctex::
-::res://Assets/Audio/::1784652071
-Music and effects go here.txt::TextFile::-1::1784652071::0::1::::<><><>0<>0<><>::
-::res://Assets/Audio/Music/::1784652193
-jingle.mp3::AudioStreamMP3::4072224838234547833::1784652071::1784652193::1::::<><><>0<>0<>ac76dbaa9cdf197b98da6cc00e79f664<>res://.godot/imported/jingle.mp3-659224d46048b081bb76b41ab0ac491f.mp3str::
-menu_music.mp3::AudioStreamMP3::3017988882094582599::1784652071::1784652193::1::::<><><>0<>0<>3fed1e7d079fd1fcc312dc7875c2abbd<>res://.godot/imported/menu_music.mp3-de7aa2bd8262de3b6df0da3c82ee4421.mp3str::
-::res://Assets/Audio/SFX/::1784652193
-audience-awww-sad.mp3::AudioStreamMP3::1266204101344425156::1784652071::1784652193::1::::<><><>0<>0<>9bc543d15a48e7e1068f2fd3854bf981<>res://.godot/imported/audience-awww-sad.mp3-ae26d6be63bb8a8204d71c6dc988ba30.mp3str::
-audience-cheer.mp3::AudioStreamMP3::8021896408407529946::1784652071::1784652193::1::::<><><>0<>0<>5c6caa27c55d1eebaab6d8db28eba2e9<>res://.godot/imported/audience-cheer.mp3-cad5484c8c4fb1db913c380e98898cbc.mp3str::
-crowd-chatter.mp3::AudioStreamMP3::1917158068495709956::1784652071::1784652193::1::::<><><>0<>0<>d4871520d8a870909f1e7d6e3b439dcb<>res://.godot/imported/crowd-chatter.mp3-762d9fdb1f32f9ad176f51a4501365d6.mp3str::
-fail-motif.mp3::AudioStreamMP3::4586794172040371372::1784652071::1784652193::1::::<><><>0<>0<>920702d5f5a8e5cef63ceb66fe90714f<>res://.godot/imported/fail-motif.mp3-cd741638e8b0d791fe94eccb993c6d29.mp3str::
-pop-rimshot.mp3::AudioStreamMP3::4339283030574417556::1784652071::1784652193::1::::<><><>0<>0<>6ffc74e7c8b74897b64179a9b2e38c6e<>res://.godot/imported/pop-rimshot.mp3-9b6b123801dbde47090d8b27a56ef1ce.mp3str::
-::res://Assets/Fonts/::1784652193
-LuckiestGuy-Regular.ttf::FontFile::6138780019422768159::1784652071::1784652193::1::::<><><>0<>0<>20638f077a64085ab9b72bc08bef1bfc<>res://.godot/imported/LuckiestGuy-Regular.ttf-96a87f43a55b4280ab9763470571b49c.fontdata::
-::res://Scenes/::1784652071
-main.tscn::PackedScene::8082121372004452290::1784652071::0::1::::<><><>0<>0<><>::uid://djgqfsn5xijq5::::res://Scripts/main.gd
-main_menu.tscn::PackedScene::874042345794809080::1784652071::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene::1748863455166570439::1784652071::0::1::::<><><>0<>0<><>::uid://cw77017130l24::::res://Scripts/player.gd<>uid://bf00g8dpwvw7j::::res://Assets/2D/playerchar2placehold.png
-::res://Scenes/Title Screen/::1784652071
-title_subviewport.gd::GDScript::6973260303831507351::1784652071::0::1::::<>Node3D<><>0<>0<><>::
-title_subviewport.tscn::PackedScene::5198458141885100455::1784652071::0::1::::<><><>0<>0<><>::uid://c6l5twvmdp7i6::::res://Scenes/Title Screen/title_subviewport.gd<>uid://ctpw2snseu1rv::::res://Assets/Fonts/LuckiestGuy-Regular.ttf<>uid://byau7ibfhgjkb::::res://Assets/Audio/Music/jingle.mp3<>uid://c6gnsujf87bll::::res://Assets/2D/SKGJamLogo.png<>uid://d0w5p4ur1vjd0::::res://new_style_box_flat.tres
-::res://Scripts/::1784652071
-main.gd::GDScript::7804329278096625042::1784652071::0::1::::<>Node<><>0<>0<><>::
-player.gd::GDScript::6385045020429556391::1784652071::0::1::::<>Node2D<><>0<>0<><>::
+::res://::1784746233
+default_bus_layout.tres::AudioBusLayout::6203256926662493164::1784746148::0::1::::<><><>0<>0<><>::
+grabber_area.tres::StyleBoxFlat::7454382984004961912::1784746148::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::5511058242636260808::1784746148::1784746237::1::::<><><>0<>0<>6a14ab6c6b4c9879ffc88670dfe19e32<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main_theme.tres::Theme::6294378935521595878::1784746148::0::1::::<><><>0<>0<><>::
+new_style_box_flat.tres::StyleBoxFlat::8961249304192220555::1784746148::0::1::::<><><>0<>0<><>::
+settings_label.tres::LabelSettings::4500921376571552004::1784746148::0::1::::<><><>0<>0<><>::uid://ctpw2snseu1rv::::res://Assets/Fonts/LuckiestGuy-Regular.ttf
+::res://Assets/::1784746148
+::res://Assets/2D/::1784746148
+DevLogos.png::CompressedTexture2D::1847803416078175376::1784746148::1784746237::1::::<><><>0<>0<>3915ca67f2c37186f474875b5daa833f<>res://.godot/imported/DevLogos.png-e93900e79c542039b212e809b016f1fc.s3tc.ctex::
+highscore3.png::CompressedTexture2D::5470736247784193372::1784746148::1784746237::1::::<><><>0<>0<>3e4931197e4487f03b67c8a3ef36e6d7<>res://.godot/imported/highscore3.png-e50e727482de4ae7511e091ed72bdc9c.s3tc.ctex::
+placeholderchar.png::CompressedTexture2D::3564242703701963602::1784746148::1784746237::1::::<><><>0<>0<>9a735b46cfd49ff8c28cf5dd3fc1c589<>res://.godot/imported/placeholderchar.png-7ce87203c1ab165cac797b050f424943.ctex::
+placeholderscore.png::CompressedTexture2D::2654930499747194021::1784746148::1784746237::1::::<><><>0<>0<>f502336abbd9cfe95e952639725106be<>res://.godot/imported/placeholderscore.png-be36bae3b6ccf1e06f24e4f8d21583d3.ctex::
+playerchar2.png::CompressedTexture2D::8540659699097934757::1784746148::1784746237::1::::<><><>0<>0<>863a5bcfa95377cfbb51ee8dcaa91fb0<>res://.godot/imported/playerchar2.png-be862b9f0a482f0a95b4ab39ca71751c.s3tc.ctex::
+playerchar2placehold.png::CompressedTexture2D::2790504723934099017::1784746148::1784746237::1::::<><><>0<>0<>b1d8bdcfdcba56964b10c12303cdf77f<>res://.godot/imported/playerchar2placehold.png-a8bf7e996b79ba82fe158f499a7e4352.ctex::
+SKGJamLogo.png::CompressedTexture2D::6961904316528594933::1784746148::1784746237::1::::<><><>0<>0<>e2b7353cb0763f685804364b85bc8608<>res://.godot/imported/SKGJamLogo.png-ff74dccde2f00180fbd5510e3fdcc625.s3tc.ctex::
+::res://Assets/3D/::1784746148
+3D assets go here.txt::TextFile::-1::1784746148::0::1::::<><><>0<>0<><>::
+::res://Assets/3D/BackgroundAssets/::1784746148
+Building1.fbx::PackedScene::2670627161213912329::1784746148::1784746239::1::::<><><>0<>0<>dc6a92d08a76baca03f0843d770fbf25<>res://.godot/imported/Building1.fbx-3b792bfb8bd17b0b269a725fdf17c13e.scn::
+Building1WithSign.fbx::PackedScene::7964148087127288272::1784746148::1784746239::1::::<><><>0<>0<>2009582af687fdcd4f06e1e042599cb9<>res://.godot/imported/Building1WithSign.fbx-82c215a2cefc3516415bba69558a021e.scn::uid://cqten5fnqnr64::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
+Building2.fbx::PackedScene::8082121094117861088::1784746148::1784746239::1::::<><><>0<>0<>8453631c2d3947d2445df3b6c7bfe3de<>res://.godot/imported/Building2.fbx-4041ddff31eadc09bdb297b9384b191e.scn::
+Building2WithSign.fbx::PackedScene::8928360770587162244::1784746148::1784746238::1::::<><><>0<>0<>b61b4c2f17f0981699ceaa7a294e9ef1<>res://.godot/imported/Building2WithSign.fbx-0010a32e672c1c405e1bfbb2b18ee790.scn::uid://cqten5fnqnr64::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
+Building3.fbx::PackedScene::2039055211853898218::1784746148::1784746238::1::::<><><>0<>0<>5cabd1e84298baa73bef36f5e8ef9b21<>res://.godot/imported/Building3.fbx-5e6bfd85c683616080e6cd9e84da5966.scn::
+Building3WithSign.fbx::PackedScene::3490670515453001215::1784746148::1784746238::1::::<><><>0<>0<>e495c5a5387ff5fd7bcb37846eadc7ec<>res://.godot/imported/Building3WithSign.fbx-3c70f1948dae129139f53545fa59242d.scn::uid://cqten5fnqnr64::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
+Sign.fbx::PackedScene::365207985839315007::1784746148::1784746238::1::::<><><>0<>0<>4e0ea60c6d54f84b228208d5ee8efc16<>res://.godot/imported/Sign.fbx-c659bdb0489639a218da51955d799b65.scn::uid://cqten5fnqnr64::::res://Assets/3D/textures/Sign UV TexPlaceholder.jpg
+::res://Assets/3D/LevelGeom/::1784746148
+Billboard.fbx::PackedScene::2735785728741777608::1784746148::1784746239::1::::<><><>0<>0<>352267556c628503e4d2187a96b4895f<>res://.godot/imported/Billboard.fbx-70b4c056767c1102646f55b886c39321.scn::uid://b6dj8sgcmhg6j::::res://Assets/3D/textures/BillboardUVPlaceholder.jpg
+FlyingBus.fbx::PackedScene::2864757929790489430::1784746148::1784746239::1::::<><><>0<>0<>64684faf987b083adbf69ba35ea1ad66<>res://.godot/imported/FlyingBus.fbx-058caf4fb502b1dea588817b95853ccf.scn::uid://bc8ksx71i6l7r::::res://Assets/3D/textures/BusUVTex.jpg
+FlyingCar.fbx::PackedScene::213060240235303073::1784746148::1784746240::1::::<><><>0<>0<>d69a20e86fb6e0b7f9a03518e520ab85<>res://.godot/imported/FlyingCar.fbx-fe6db3a2015ea510670770332d8683e5.scn::uid://p56y7h4ehwnm::::res://Assets/3D/textures/FloatingCarUVTex.jpg
+SlantedRoof1.fbx::PackedScene::5214558522755839840::1784746148::1784746240::1::::<><><>0<>0<>dbd14317991c16c70aa6032bdfbecd4c<>res://.godot/imported/SlantedRoof1.fbx-9a2c130e5850065526b118bb521204e2.scn::uid://be6kymmmodi2c::::res://Assets/3D/textures/SlantedRoofUVTexCol.jpg
+SlantedRoof2.fbx::PackedScene::6985706170421844::1784746148::1784746240::1::::<><><>0<>0<>c3f3f250660e05c4d39c187dde1df56d<>res://.godot/imported/SlantedRoof2.fbx-503189cb174b876fbf2d17e013135617.scn::uid://cv6b5umimsllb::::res://Assets/3D/textures/ForwardFacingRoofUVTex.jpg
+::res://Assets/3D/Textures/::1784746148
+BillboardUVPlaceholder.jpg::CompressedTexture2D::4569074308664363127::1784746148::1784746238::1::::<><><>0<>0<>bc7919b648fdee54680e10318f2c5385<>res://.godot/imported/BillboardUVPlaceholder.jpg-565ac93c98ced0134fed71799736665c.s3tc.ctex::
+BusUVTex.jpg::CompressedTexture2D::2595563409735129781::1784746148::1784746238::1::::<><><>0<>0<>f81570e5074131e43f82e27af9897a06<>res://.godot/imported/BusUVTex.jpg-b7b0926e410a84a3fbf2aa6dbdd6f201.s3tc.ctex::
+FloatingCarUVTex.jpg::CompressedTexture2D::1116690765905866102::1784746148::1784746238::1::::<><><>0<>0<>9d02de3cf05016a2bbfb7fbc5f352449<>res://.godot/imported/FloatingCarUVTex.jpg-773c992d74e83a67d943e0253d04b2cd.s3tc.ctex::
+ForwardFacingRoofUVTex.jpg::CompressedTexture2D::6310918154355544435::1784746148::1784746237::1::::<><><>0<>0<>1f2cac4f03899922fa043329c91afc93<>res://.godot/imported/ForwardFacingRoofUVTex.jpg-13f31b14cd953ad1131954cc275a1fbd.s3tc.ctex::
+Sign UV TexPlaceholder.jpg::CompressedTexture2D::5935353710250785479::1784746148::1784746240::1::::<><><>0<>0<>3c8b32a84c1a3c219a9266d638e282d9<>res://.godot/imported/Sign UV TexPlaceholder.jpg-7fb6a867c97b1ad6d8d36c6d6d0c1547.s3tc.ctex::
+SlantedRoofUVTexCol.jpg::CompressedTexture2D::2731822446984382384::1784746148::1784746237::1::::<><><>0<>0<>64ec6e884b472ba8a78064d977d8da5f<>res://.godot/imported/SlantedRoofUVTexCol.jpg-dca4cfd4bb85b8bf71f42de43dcd4630.s3tc.ctex::
+::res://Assets/3D/Textures/TextureTemplates/::1784746148
+BillboardUVTemplate.jpg::CompressedTexture2D::6483497558346656649::1784746148::1784746236::1::::<><><>0<>0<>4b84d07a35a718838f12da3ab0993116<>res://.godot/imported/BillboardUVTemplate.jpg-4998546e6ae9c6f96c6c624f1344bf14.ctex::
+FlyingBusUVTemplate.jpg::CompressedTexture2D::721815928372325763::1784746148::1784746236::1::::<><><>0<>0<>476af2ee706acdd2c707069ece8c90a0<>res://.godot/imported/FlyingBusUVTemplate.jpg-7eb42ea44aaf6828afd8ce0e1f334b28.ctex::
+FlyingCarUVTemplate.jpg::CompressedTexture2D::795104461052798727::1784746148::1784746236::1::::<><><>0<>0<>db49a3ae51deae0885bd3e2c6048d2d6<>res://.godot/imported/FlyingCarUVTemplate.jpg-0e3cdf57d77782bcbcb0b0fd6cd13579.ctex::
+Sign UV Template.jpg::CompressedTexture2D::2659220695009853509::1784746148::1784746236::1::::<><><>0<>0<>ff73ef93ec4598df05bb6bd8273c643f<>res://.godot/imported/Sign UV Template.jpg-6db79d3cb32851910fabea0abd320746.ctex::
+SlantedRoof1UVTemplate.jpg::CompressedTexture2D::2356133667518751742::1784746148::1784746236::1::::<><><>0<>0<>95e692aa59689cf16f6143f750725f0f<>res://.godot/imported/SlantedRoof1UVTemplate.jpg-5f8a84fc52f5b443342b6d3e42c1f7f8.ctex::
+SlantedRoof2UVTemplate.jpg::CompressedTexture2D::6617018070394235159::1784746148::1784746236::1::::<><><>0<>0<>6fb0790c84ae0426e28781a02a0a93bd<>res://.godot/imported/SlantedRoof2UVTemplate.jpg-9ec66bf803d221f1cdcc0e9e180d8339.ctex::
+::res://Assets/Audio/::1784746148
+Music and effects go here.txt::TextFile::-1::1784746148::0::1::::<><><>0<>0<><>::
+::res://Assets/Audio/Music/::1784746148
+jingle.mp3::AudioStreamMP3::4072224838234547833::1784746148::1784746236::1::::<><><>0<>0<>ac76dbaa9cdf197b98da6cc00e79f664<>res://.godot/imported/jingle.mp3-659224d46048b081bb76b41ab0ac491f.mp3str::
+menu_music.mp3::AudioStreamMP3::3017988882094582599::1784746148::1784746236::1::::<><><>0<>0<>3fed1e7d079fd1fcc312dc7875c2abbd<>res://.godot/imported/menu_music.mp3-de7aa2bd8262de3b6df0da3c82ee4421.mp3str::
+title_screen.mp3::AudioStreamMP3::5769426388782277893::1784746148::1784746236::1::::<><><>0<>0<>55e684a23f9efc49e1221ad4aa241cf3<>res://.godot/imported/title_screen.mp3-5dce91afe01309dc21425fee93f7c160.mp3str::
+::res://Assets/Audio/SFX/::1784746148
+audience-awww-sad.mp3::AudioStreamMP3::1266204101344425156::1784746148::1784746236::1::::<><><>0<>0<>9bc543d15a48e7e1068f2fd3854bf981<>res://.godot/imported/audience-awww-sad.mp3-ae26d6be63bb8a8204d71c6dc988ba30.mp3str::
+audience-cheer.mp3::AudioStreamMP3::8021896408407529946::1784746148::1784746236::1::::<><><>0<>0<>5c6caa27c55d1eebaab6d8db28eba2e9<>res://.godot/imported/audience-cheer.mp3-cad5484c8c4fb1db913c380e98898cbc.mp3str::
+crowd-chatter.mp3::AudioStreamMP3::5930352836652561661::1784746148::1784746236::1::::<><><>0<>0<>f8ace2505609861f7053efeb3d881f3c<>res://.godot/imported/crowd-chatter.mp3-762d9fdb1f32f9ad176f51a4501365d6.mp3str::
+fail-motif.mp3::AudioStreamMP3::4586794172040371372::1784746148::1784746236::1::::<><><>0<>0<>920702d5f5a8e5cef63ceb66fe90714f<>res://.godot/imported/fail-motif.mp3-cd741638e8b0d791fe94eccb993c6d29.mp3str::
+pop-rimshot.mp3::AudioStreamMP3::4339283030574417556::1784746148::1784746236::1::::<><><>0<>0<>6ffc74e7c8b74897b64179a9b2e38c6e<>res://.godot/imported/pop-rimshot.mp3-9b6b123801dbde47090d8b27a56ef1ce.mp3str::
+::res://Assets/Fonts/::1784746148
+LuckiestGuy-Regular.ttf::FontFile::6138780019422768159::1784746148::1784746236::1::::<><><>0<>0<>20638f077a64085ab9b72bc08bef1bfc<>res://.godot/imported/LuckiestGuy-Regular.ttf-96a87f43a55b4280ab9763470571b49c.fontdata::
+PixelOperator8.ttf::FontFile::4083904255840445418::1784746148::1784746236::1::::<><><>0<>0<>cc2e10ed5df6c1e10a36d2df9e080b2e<>res://.godot/imported/PixelOperator8.ttf-0feaf1aed7c251893b0e728595fd7455.fontdata::
+::res://Scenes/::1784746148
+high_score.tscn::PackedScene::8166717341799592846::1784746148::0::1::::<><><>0<>0<><>::uid://c7dwdfycy81hn::::res://Scripts/high_score.gd<>uid://cj7chyc4lo1fk::::res://Assets/2D/highscore3.png
+main.tscn::PackedScene::8082121372004452290::1784746148::0::1::::<><><>0<>0<><>::uid://djgqfsn5xijq5::::res://Scripts/main.gd
+main_menu.tscn::PackedScene::874042345794809080::1784746148::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::1748863455166570439::1784746148::0::1::::<><><>0<>0<><>::uid://cw77017130l24::::res://Scripts/player.gd<>uid://dtxfogs8vdi5b::::res://Assets/2D/playerchar2.png
+testscene.tscn::PackedScene::4089249715771076099::1784746148::0::1::::<><><>0<>0<><>::uid://domav2ro4dq8e::::res://Scenes/high_score.tscn<>uid://y6fr4t71pqff::::res://Scenes/player.tscn<>uid://dbhcodxrxq1f::::res://Assets/3D/LevelGeom/FlyingCar.fbx
+::res://Scenes/Title Screen/::1784746148
+main_menu_control.gd::GDScript::8368180052500909711::1784746148::0::1::::<>Control<><>0<>0<><>::
+title_subviewport.gd::GDScript::6973260303831507351::1784746148::0::1::::<>Node3D<><>0<>0<><>::
+title_subviewport.tscn::PackedScene::5198458141885100455::1784746148::0::1::::<><><>0<>0<><>::uid://c6l5twvmdp7i6::::res://Scenes/Title Screen/title_subviewport.gd<>uid://ctpw2snseu1rv::::res://Assets/Fonts/LuckiestGuy-Regular.ttf<>uid://cog0uy2vnjj8h::::res://Assets/Audio/Music/title_screen.mp3<>uid://c6gnsujf87bll::::res://Assets/2D/SKGJamLogo.png<>uid://d0w5p4ur1vjd0::::res://new_style_box_flat.tres<>uid://1ldb1pofnli3::::res://Assets/2D/DevLogos.png<>uid://drhux5re3d88r::::res://Scenes/Title Screen/main_menu_control.gd<>uid://b5ejruhag8iym::::res://settings_label.tres<>uid://cvxbrbw5yageg::::res://main_theme.tres
+::res://Scripts/::1784746148
+camera_follow.gd::GDScript::1626078715250744386::1784746148::0::1::::<>Camera3D<><>0<>0<><>::
+high_score.gd::GDScript::7026418928104321579::1784746148::0::1::::<>Node3D<><>0<>0<><>::
+main.gd::GDScript::7804329278096625042::1784746148::0::1::::<>Node<><>0<>0<><>::
+player.gd::GDScript::6385045020429556391::1784746148::0::1::::<>Node3D<><>0<>0<><>::
+::res://themes/::1784746148
+score.tres::Theme::5671277728853114214::1784746148::0::1::::<><><>0<>0<><>::uid://bygjkoh3ru3lu::::res://Assets/Fonts/PixelOperator8.ttf
