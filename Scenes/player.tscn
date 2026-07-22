@@ -281,6 +281,7 @@ speed = 5
 jumpspeed = -250
 
 [node name="PlayerChar" type="CharacterBody3D" parent="." unique_id=1271370435]
+collision_layer = 2
 
 [node name="PlayerCol" type="CollisionShape3D" parent="PlayerChar" unique_id=108835559]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0014038086, -0.033721924, 0)
