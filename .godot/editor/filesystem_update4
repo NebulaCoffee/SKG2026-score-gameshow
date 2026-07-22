@@ -1,7 +1,3 @@
-res://Scenes/LevelChunks/TestChunk.tscn
-res://Scripts/load_next_chunk.gd
-res://Scenes/player.tscn
-res://Scenes/LevelGeometry/Billboard.tscn
-res://Scenes/LevelGeometry/billboard.tscn
-res://Scenes/LevelChunks/test_chunk.tscn
 res://Scenes/LevelChunks/test_player_spawn.tscn
+res://Scenes/LevelChunks/test_chunk.tscn
+res://Scripts/load_next_chunk.gd

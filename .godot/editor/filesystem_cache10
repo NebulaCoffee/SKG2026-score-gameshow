@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784752508
+::res://::1784758447
 default_bus_layout.tres::AudioBusLayout::6203256926662493164::1784746148::0::1::::<><><>0<>0<><>::
 grabber_area.tres::StyleBoxFlat::7454382984004961912::1784746148::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5511058242636260808::1784746148::1784746237::1::::<><><>0<>0<>6a14ab6c6b4c9879ffc88670dfe19e32<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -66,8 +66,9 @@ main.tscn::PackedScene::8082121372004452290::1784746148::0::1::::<><><>0<>0<><>:
 main_menu.tscn::PackedScene::874042345794809080::1784746148::0::1::::<><><>0<>0<><>::
 player.tscn::PackedScene::1748863455166570439::1784753491::0::1::::<><><>0<>0<><>::uid://cw77017130l24::::res://Scripts/player.gd<>uid://dtxfogs8vdi5b::::res://Assets/2D/playerchar2.png
 testscene.tscn::PackedScene::4089249715771076099::1784746148::0::1::::<><><>0<>0<><>::uid://domav2ro4dq8e::::res://Scenes/high_score.tscn<>uid://y6fr4t71pqff::::res://Scenes/player.tscn<>uid://dbhcodxrxq1f::::res://Assets/3D/LevelGeom/FlyingCar.fbx
-::res://Scenes/LevelChunks/::1784753906
-test_player_spawn.tscn::PackedScene::4165073627485195097::1784753906::0::1::::<><><>0<>0<><>::uid://c3t04cylur1gh::::res://Scenes/LevelGeometry/billboard.tscn<>uid://br6xyck80j40v::::res://Scripts/load_next_chunk.gd<>uid://y6fr4t71pqff::::res://Scenes/player.tscn
+::res://Scenes/LevelChunks/::1784758409
+test_chunk.tscn::PackedScene::5084107509222471184::1784758014::0::1::::<><><>0<>0<><>::uid://c3t04cylur1gh::::res://Scenes/LevelGeometry/billboard.tscn<>uid://br6xyck80j40v::::res://Scripts/load_next_chunk.gd
+test_player_spawn.tscn::PackedScene::4165073627485195097::1784758409::0::1::::<><><>0<>0<><>::uid://c3t04cylur1gh::::res://Scenes/LevelGeometry/billboard.tscn<>uid://br6xyck80j40v::::res://Scripts/load_next_chunk.gd<>uid://y6fr4t71pqff::::res://Scenes/player.tscn
 ::res://Scenes/LevelGeometry/::1784752499
 billboard.tscn::PackedScene::6778922022069869283::1784748594::0::1::::<><><>0<>0<><>::uid://be8h8x5b3h4jk::::res://Assets/3D/LevelGeom/Billboard.fbx
 flying_bus.tscn::PackedScene::4473505427560211112::1784749466::0::1::::<><><>0<>0<><>::uid://bg2ye6dxdg77w::::res://Assets/3D/LevelGeom/FlyingBus.fbx
@@ -78,10 +79,10 @@ slanted_roof2.tscn::PackedScene::3319103171988388507::1784751145::0::1::::<><><>
 main_menu_control.gd::GDScript::8368180052500909711::1784746148::0::1::::<>Control<><>0<>0<><>::
 title_subviewport.gd::GDScript::6973260303831507351::1784746148::0::1::::<>Node3D<><>0<>0<><>::
 title_subviewport.tscn::PackedScene::5198458141885100455::1784746148::0::1::::<><><>0<>0<><>::uid://c6l5twvmdp7i6::::res://Scenes/Title Screen/title_subviewport.gd<>uid://ctpw2snseu1rv::::res://Assets/Fonts/LuckiestGuy-Regular.ttf<>uid://cog0uy2vnjj8h::::res://Assets/Audio/Music/title_screen.mp3<>uid://c6gnsujf87bll::::res://Assets/2D/SKGJamLogo.png<>uid://d0w5p4ur1vjd0::::res://new_style_box_flat.tres<>uid://1ldb1pofnli3::::res://Assets/2D/DevLogos.png<>uid://drhux5re3d88r::::res://Scenes/Title Screen/main_menu_control.gd<>uid://b5ejruhag8iym::::res://settings_label.tres<>uid://cvxbrbw5yageg::::res://main_theme.tres
-::res://Scripts/::1784753906
+::res://Scripts/::1784758410
 camera_follow.gd::GDScript::1626078715250744386::1784746148::0::1::::<>Camera3D<><>0<>0<><>::
 high_score.gd::GDScript::7026418928104321579::1784750299::0::1::::<>Node3D<><>0<>0<><>::
-load_next_chunk.gd::GDScript::3645066207830760787::1784753906::0::1::::<>Area3D<><>0<>0<><>::
+load_next_chunk.gd::GDScript::3645066207830760787::1784758410::0::1::::<>Area3D<><>0<>0<><>::
 main.gd::GDScript::7804329278096625042::1784746148::0::1::::<>Node<><>0<>0<><>::
 player.gd::GDScript::6385045020429556391::1784750299::0::1::::<>Node3D<><>0<>0<><>::
 ::res://themes/::1784746148
