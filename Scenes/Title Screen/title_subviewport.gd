@@ -8,6 +8,7 @@ extends Node3D
 
 @onready var main_menu_control = $CanvasLayer/MainMenuControl
 @onready var splash_sprite = $SplashSprite
+@onready var dev_logo_sprite = $DevLogoSprite
 
 @onready var music_stream_player = $MusicStreamPlayer
 @onready var sfx_stream_player = $SFXStreamPlayer
@@ -40,13 +41,16 @@ func _ready():
 	for title in titles:
 		title.position = Vector3(0, 0, -20)
 		title.visible = false
-	fade_out_and_remove()
+	sfx_stream_player.stream = sfx_audience_chatter
+	sfx_stream_player.play()
+	await fade_out_and_remove(splash_sprite)
+	await fade_in(dev_logo_sprite)
+	await get_tree().create_timer(3).timeout
+	await fade_out_and_remove(dev_logo_sprite)
 	start_sequence()
 
 func start_sequence():
-	sfx_stream_player.stream = sfx_audience_chatter
-	sfx_stream_player.play()
-	await sfx_stream_player.finished
+	sfx_stream_player.stop()
 	sfx_stream_player.stream = sfx_audience_cheer
 	music_stream_player.play()
 	await get_tree().create_timer(2).timeout
@@ -54,13 +58,21 @@ func start_sequence():
 	await get_tree().create_timer(5).timeout
 	start_title_animation = true
 
-func fade_out_and_remove():
+func fade_out_and_remove(sprite3D: Sprite3D):
 	var tween = create_tween()
 	tween.set_trans(Tween.TRANS_EXPO)
 	tween.set_ease(Tween.EASE_IN)
-	tween.tween_property(splash_sprite, "modulate:a", 0.0, 3.0)
-	tween.tween_callback(splash_sprite.queue_free)
-
+	tween.tween_property(sprite3D, "modulate:a", 0.0, 3.0)
+	tween.tween_callback(sprite3D.queue_free)
+	await tween.finished
+	
+func fade_in(sprite3D: Sprite3D):
+	var tween = create_tween()
+	tween.set_trans(Tween.TRANS_EXPO)
+	tween.set_ease(Tween.EASE_IN)
+	tween.tween_property(sprite3D, "modulate:a", 1.0, 0.5)
+	await tween.finished
+	
 func _process(delta):
 	if not start_title_animation:
 		return
