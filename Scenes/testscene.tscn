@@ -17,7 +17,7 @@ speed = 80
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.60614, 3.1065483, 0)
 
 [node name="Billboard" parent="." unique_id=351189854 instance=ExtResource("3_vy56e")]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 84.39762, 29.88956, -24.662262)
+transform = Transform3D(550.7081, 0, 0, 0, 430.03134, 0, 0, 0, 100, 346.9824, 29.88956, -24.662262)
 
 [node name="StaticBody2D" type="StaticBody3D" parent="." unique_id=48278438]
 
