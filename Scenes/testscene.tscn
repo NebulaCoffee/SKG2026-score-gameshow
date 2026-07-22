@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://domav2ro4dq8e" path="res://Scenes/high_score.tscn" id="1_wni78"]
 [ext_resource type="PackedScene" uid="uid://y6fr4t71pqff" path="res://Scenes/player.tscn" id="2_nes3m"]
 [ext_resource type="PackedScene" uid="uid://dbhcodxrxq1f" path="res://Assets/3D/LevelGeom/FlyingCar.fbx" id="3_nes3m"]
+[ext_resource type="PackedScene" uid="uid://be8h8x5b3h4jk" path="res://Assets/3D/LevelGeom/Billboard.fbx" id="3_vy56e"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ganen"]
 
@@ -14,6 +15,9 @@ speed = 80
 
 [node name="Player" parent="." unique_id=854722899 instance=ExtResource("2_nes3m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.60614, 3.1065483, 0)
+
+[node name="Billboard" parent="." unique_id=351189854 instance=ExtResource("3_vy56e")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 84.39762, 29.88956, -24.662262)
 
 [node name="StaticBody2D" type="StaticBody3D" parent="." unique_id=48278438]
 
