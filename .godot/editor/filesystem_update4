@@ -1,14 +1,1 @@
-res://Scenes/LevelChunks/test_scene2.tscn
-res://Scenes/player.tscn
-res://Scenes/LevelChunks/start.tscn
-res://Scenes/load_zone.tscn
-res://Scenes/LevelGeometry/Billboard.tscn
-res://Scenes/LevelGeometry/flying_bus.tscn
-res://Scenes/LevelGeometry/flying_car.tscn
-res://Scenes/LevelGeometry/slanted_roof1.tscn
-res://Scenes/LevelGeometry/slanted_roof2.tscn
-res://Scripts/load_next_chunk.gd
-res://Scenes/LevelChunks/easy_jumps.tscn
-res://Scenes/LevelChunks/test_player_spawn.tscn
-res://Scenes/LevelChunks/easy_slides.tscn
 res://Scenes/LevelChunks/easy_jump_and_slide.tscn
