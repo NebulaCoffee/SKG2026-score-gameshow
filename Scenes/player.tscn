@@ -301,6 +301,5 @@ spring_length = 100.0
 [node name="Camera3D" type="Camera3D" parent="PlayerChar/PlayerCam" unique_id=1100971351]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 100)
 h_offset = 100.0
-v_offset = 50.0
 current = true
-near = 0.5
+fov = 100.0

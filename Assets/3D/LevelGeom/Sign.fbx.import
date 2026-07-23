@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://fg56ma66p3pj"
-path="res://.godot/imported/Sign.fbx-c659bdb0489639a218da51955d799b65.scn"
+path="res://.godot/imported/Sign.fbx-d3e429c6546e5188dcbf5349fc2b9641.scn"
 
 [deps]
 
-source_file="res://Assets/3D/BackgroundAssets/Sign.fbx"
-dest_files=["res://.godot/imported/Sign.fbx-c659bdb0489639a218da51955d799b65.scn"]
+source_file="res://Assets/3D/LevelGeom/Sign.fbx"
+dest_files=["res://.godot/imported/Sign.fbx-d3e429c6546e5188dcbf5349fc2b9641.scn"]
 
 [params]
 

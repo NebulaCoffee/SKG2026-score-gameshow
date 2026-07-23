@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ch5j1q8s3kesa"]
+
+[ext_resource type="PackedScene" uid="uid://fg56ma66p3pj" path="res://Assets/3D/LevelGeom/Sign.fbx" id="1_7ukar"]
+[ext_resource type="Script" uid="uid://mmcdvfjpnvfo" path="res://Scripts/sign.gd" id="2_18pdc"]
+
+[node name="Sign" unique_id=472230102 instance=ExtResource("1_7ukar")]
+script = ExtResource("2_18pdc")
+
+[node name="BuildingAndSign1" parent="." index="0" unique_id=2012383277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)

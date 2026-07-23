@@ -1,3 +1,9 @@
+res://Scenes/LevelGeometry/Billboard.tscn
+res://Assets/3D/Textures/billboard_mats/mecha.tres
+res://Assets/3D/Textures/sign_mats/familiarsnacks.tres
+res://Scenes/LevelGeometry/Sign.tscn
+res://Scripts/sign.gd
 res://Scenes/LevelChunks/test_player_spawn.tscn
-res://Scenes/LevelChunks/test_chunk.tscn
 res://Scripts/load_next_chunk.gd
+res://Scenes/player.tscn
+res://Scenes/LevelChunks/test_chunk.tscn
