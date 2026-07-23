@@ -34,8 +34,8 @@ func _process(delta: float) -> void:
 	start = true
 
 func _on_timer_timeout() -> void:
-	current_score += 1
-	update_score(current_score)
+	Globals.current_score += 1
+	update_score(Globals.current_score)
 	timer.start()
 	if character_body_3d.global_position.y >= 100:
 		_switch_dir("down")

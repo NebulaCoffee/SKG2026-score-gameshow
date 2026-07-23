@@ -1,12 +1,135 @@
 [gd_scene format=3 uid="uid://dgxcfusb6po1q"]
 
+[ext_resource type="Script" uid="uid://ckjpwxq282ulm" path="res://Scripts/high_score_screen.gd" id="1_w41t5"]
+[ext_resource type="Texture2D" uid="uid://dhfgafhl3eefh" path="res://Assets/2D/background.png" id="2_2206h"]
+[ext_resource type="Texture2D" uid="uid://ctj25oujupmrk" path="res://Assets/2D/scorebg.png" id="2_mlnkq"]
+[ext_resource type="Theme" uid="uid://cm2hd6v7a4h2m" path="res://themes/score.tres" id="3_2206h"]
+
 [node name="High Score Screen" type="Node" unique_id=1396435410]
+script = ExtResource("1_w41t5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=508184524]
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=498678459]
-offset_left = 92.0
-offset_top = 26.0
-offset_right = 237.0
-offset_bottom = 135.0
-text = "HIGH SCORE SHOULD GO HERE"
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=75982316]
+offset_right = 319.0
+offset_bottom = 158.0
+texture = ExtResource("2_2206h")
+expand_mode = 2
+
+[node name="ScoreBG" type="TextureRect" parent="CanvasLayer" unique_id=1864672083]
+offset_left = 95.0
+offset_right = 246.0
+offset_bottom = 151.0
+texture = ExtResource("2_mlnkq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=1055284763]
+propagate_maximum_size = false
+offset_left = 104.0
+offset_top = 33.0
+offset_right = 287.0
+offset_bottom = 644.0
+alignment = 1
+
+[node name="ScorerContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer" unique_id=1257856345]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Name1" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScorerContainer" unique_id=162535685]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "NAME"
+fit_content = true
+
+[node name="Name2" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScorerContainer" unique_id=1266595788]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "NAME"
+fit_content = true
+
+[node name="Name3" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScorerContainer" unique_id=1381217734]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "NAME"
+fit_content = true
+
+[node name="Name4" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScorerContainer" unique_id=2018746121]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "NAME"
+fit_content = true
+
+[node name="Name5" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScorerContainer" unique_id=1817056604]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "NAME"
+fit_content = true
+
+[node name="Name6" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScorerContainer" unique_id=288416109]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "NAME"
+fit_content = true
+
+[node name="ScoreContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer" unique_id=1305206342]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Score1" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScoreContainer" unique_id=498678459]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "00000"
+fit_content = true
+
+[node name="Score2" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScoreContainer" unique_id=2125471]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "00000"
+fit_content = true
+
+[node name="Score3" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScoreContainer" unique_id=1165715031]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "00000"
+fit_content = true
+
+[node name="Score4" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScoreContainer" unique_id=409518791]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "00000"
+fit_content = true
+
+[node name="Score5" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScoreContainer" unique_id=519740543]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "00000"
+fit_content = true
+
+[node name="Score6" type="RichTextLabel" parent="CanvasLayer/HBoxContainer/ScoreContainer" unique_id=1772981112]
+layout_mode = 2
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "00000"
+fit_content = true
