@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dyugc8dthpv2v"]
+
+[ext_resource type="Script" uid="uid://br6xyck80j40v" path="res://Scripts/load_next_chunk.gd" id="1_3oev0"]
+[ext_resource type="PackedScene" uid="uid://b4y88l2sque1e" path="res://Scenes/LevelGeometry/flying_bus.tscn" id="2_go5kx"]
+[ext_resource type="PackedScene" uid="uid://bnj2e53ge1fyh" path="res://Scenes/LevelGeometry/slanted_roof2.tscn" id="3_an08s"]
+[ext_resource type="PackedScene" uid="uid://c3t04cylur1gh" path="res://Scenes/LevelGeometry/Billboard.tscn" id="4_wjpvq"]
+[ext_resource type="PackedScene" uid="uid://kwxtqyekx6kp" path="res://Scenes/LevelGeometry/slanted_roof1.tscn" id="5_gnoef"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ws67i"]
+size = Vector3(1205.5303, 12.7496395, 186.81616)
+
+[node name="EasyJumpAndSlide" type="Node3D" unique_id=1107895418]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=434322746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 485.10123, 0, 0)
+collision_mask = 2
+script = ExtResource("1_3oev0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=659087999]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_ws67i")
+
+[node name="x1000" type="Node3D" parent="." unique_id=718366795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1000, 0, 0)
+
+[node name="FlyingBus" parent="." unique_id=197974158 instance=ExtResource("2_go5kx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 196.10645, -3.2058182, 0)
+
+[node name="FlyingBus2" parent="." unique_id=1286591643 instance=ExtResource("2_go5kx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 460.40125, -3.2058182, 0)
+
+[node name="SlantedRoof2" parent="." unique_id=1860439250 instance=ExtResource("3_an08s")]
+transform = Transform3D(0.85, 0, -8.742278e-08, 0, -1, 0, 7.430936e-08, 0, 1, 66.36389, 10.197117, 0)
+
+[node name="Billboard" parent="." unique_id=39722285 instance=ExtResource("4_wjpvq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.690172, -0.095, 0)
+
+[node name="SlantedRoof3" parent="." unique_id=229090729 instance=ExtResource("3_an08s")]
+transform = Transform3D(0.6, 0, 0, 0, -1, 0, 0, 0, 1, 629.003, 10.197, 0)
+
+[node name="SlantedRoof4" parent="." unique_id=1270839779 instance=ExtResource("3_an08s")]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 745.9866, -4.210579, 0)
+
+[node name="SlantedRoof1" parent="." unique_id=656043249 instance=ExtResource("5_gnoef")]
+transform = Transform3D(-0.4, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 1000.49164, 0.53289235, 0)
+
+[node name="SlantedRoof5" parent="." unique_id=37621312 instance=ExtResource("5_gnoef")]
+transform = Transform3D(-0.5, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 903.952, 0.53289235, 0)
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

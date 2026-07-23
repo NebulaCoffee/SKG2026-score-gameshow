@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bg2ye6dxdg77w" path="res://Assets/3D/LevelGeom/FlyingBus.fbx" id="1_0tp7c"]
 
-[node name="Node3D" type="Node3D" unique_id=197974158]
+[node name="FlyingBus" type="Node3D" unique_id=197974158]
 
 [node name="FlyingBus" parent="." unique_id=518936506 instance=ExtResource("1_0tp7c")]
 transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 20.14708, -54.232876, 0)

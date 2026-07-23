@@ -1,9 +1,9 @@
+Node3D
+Area3D
 DirectionalLight3D
 Camera3D
-Node3D
 Node
 CollisionShape3D
-Area3D
 CollisionPolygon3D
 StaticBody3D
 Sprite3D
@@ -12,4 +12,3 @@ Button
 VBoxContainer
 Control
 CanvasLayer
-SubViewport

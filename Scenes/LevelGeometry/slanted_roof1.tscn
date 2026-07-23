@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cgj8atwxonycu" path="res://Assets/3D/LevelGeom/SlantedRoof1.fbx" id="1_qpms4"]
 
-[node name="Node3D" type="Node3D" unique_id=656043249]
+[node name="SlantedRoof1" type="Node3D" unique_id=656043249]
 
 [node name="SlantedRoof1" parent="." unique_id=1098459445 instance=ExtResource("1_qpms4")]
 transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 123.87705, 0, 0)
