@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://t2huvjnfkfbt"]
+
+[ext_resource type="PackedScene" uid="uid://b4y88l2sque1e" path="res://Scenes/LevelGeometry/flying_bus.tscn" id="1_y86f2"]
+[ext_resource type="PackedScene" uid="uid://bnj2e53ge1fyh" path="res://Scenes/LevelGeometry/slanted_roof2.tscn" id="2_4j4l6"]
+[ext_resource type="PackedScene" uid="uid://kwxtqyekx6kp" path="res://Scenes/LevelGeometry/slanted_roof1.tscn" id="3_bu16a"]
+[ext_resource type="Script" uid="uid://br6xyck80j40v" path="res://Scripts/load_next_chunk.gd" id="4_4j4l6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bu16a"]
+size = Vector3(1205.5303, 12.7496395, 186.81616)
+
+[node name="EasyJumps" type="Node3D" unique_id=401747630]
+
+[node name="FlyingBus" parent="." unique_id=197974158 instance=ExtResource("1_y86f2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11204529, -0.32836914, 0)
+
+[node name="SlantedRoof2" parent="." unique_id=1860439250 instance=ExtResource("2_4j4l6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 171.98785, 15.531715, 0)
+
+[node name="SlantedRoof3" parent="." unique_id=1000772039 instance=ExtResource("2_4j4l6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 304.978, -10.457996, 0)
+
+[node name="SlantedRoof4" parent="." unique_id=1128739165 instance=ExtResource("2_4j4l6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 441.01572, 11.2040615, 0)
+
+[node name="SlantedRoof1" parent="." unique_id=656043249 instance=ExtResource("3_bu16a")]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 1, 827.674, -68.977, 0)
+
+[node name="FlyingBus2" parent="." unique_id=1723085211 instance=ExtResource("1_y86f2")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 1, 616.309, -28.645, 0)
+
+[node name="x1000" type="Node3D" parent="." unique_id=952210612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1000, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1660409018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 497.6966, 0, 0)
+collision_mask = 2
+script = ExtResource("4_4j4l6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=21344369]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 6.5011597, 2.841746e-07, 0)
+shape = SubResource("BoxShape3D_bu16a")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

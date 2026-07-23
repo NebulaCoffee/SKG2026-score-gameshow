@@ -1,9 +1,9 @@
 extends Area3D
 
-const test_chunk = preload("res://Scenes/LevelChunks/test_chunk.tscn")
+const test_chunk = preload("res://Scenes/LevelChunks/easy_jump_and_slide.tscn")
 var next_chunk: Node3D
 var last_chunk: Node3D
-const CHUNK_LENGTH := 180.0
+const CHUNK_LENGTH := 1000.0
 
 func _ready() -> void:
 	pass
