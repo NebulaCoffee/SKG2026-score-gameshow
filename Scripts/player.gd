@@ -10,17 +10,21 @@ extends Node3D
 @export var speed: int # Determines the current speed of the character
 @export var jumpspeed : int # Determines jump speed
 var defult_col: Vector3
+var col_pos: Vector3
 var jumping: bool
 var running: bool
 
 func _ready() -> void:
 	jumping = false
 	defult_col = player_col.shape.size
+	col_pos = player_col.position
 
 func _physics_process(delta: float) -> void:
 	player_char.velocity += player_char.get_gravity() * delta
 	if running == true:
 		player_char.velocity.x = 1 * speed
+	if jumping == true:
+		player_char.velocity.y = jumpspeed
 	
 	player_char.move_and_slide()
 
@@ -30,7 +34,6 @@ func _process(delta: float) -> void:
 		await get_tree().create_timer(1).timeout
 		_set_ani("running",1)
 		running = true
-	
 	speed += 0.1
 	player_ani.speed_scale += (speed/100)
 	if player_ani.speed_scale > 25:
@@ -57,7 +60,7 @@ func _set_ani(ani : String, spd : int)->void:
 # collision box size.
 func slide()->void:
 	player_col.shape.size.y = 8
-	player_col.position.y = 8
+	player_col.position.y = -8
 	_set_ani("skid",2)
 	print(player_col.shape.size.y)
 	await player_ani.animation_finished
@@ -69,8 +72,7 @@ func slide()->void:
 # Run this function when the player character jumps. It should move them upwards.
 func jump()->void:
 	jumping = true
-	player_char.velocity.y = jumpspeed
-	player_col.shape.size = Vector3(6,12,0)
+	player_col.shape.size = Vector3(6,12,1)
 	_set_ani("jump", 5)
 	await player_ani.animation_finished
 	_set_ani("jump_loop",0)
@@ -79,6 +81,7 @@ func jump()->void:
 	
 func normal() -> void:
 	player_col.shape.size = defult_col
+	player_col.position = col_pos
 	jumping = false
 	_set_ani("running",0)
 

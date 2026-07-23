@@ -51,3 +51,11 @@ func _switch_dir(dir: String)->void:
 
 func emit_score()->void:
 	score_emit.emit(current_score)
+
+func load_end_scene()->void:
+	print("GAME OVER!")
+	get_tree().change_scene_to_file("res://Scenes/High score screen/high_score_screen.tscn")
+
+
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	load_end_scene()

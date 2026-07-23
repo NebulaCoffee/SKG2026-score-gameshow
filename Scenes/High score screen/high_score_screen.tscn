@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dgxcfusb6po1q"]
+
+[node name="High Score Screen" type="Node" unique_id=1396435410]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=508184524]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=498678459]
+offset_left = 92.0
+offset_top = 26.0
+offset_right = 237.0
+offset_bottom = 135.0
+text = "HIGH SCORE SHOULD GO HERE"

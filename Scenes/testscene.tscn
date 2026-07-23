@@ -10,7 +10,7 @@
 [node name="Testscene" type="Node3D" unique_id=1511334283]
 
 [node name="HighScore" parent="." unique_id=526240390 instance=ExtResource("1_wni78")]
-transform = Transform3D(32, 0, 0, 0, 32, 0, 0, 0, 32, 55.148182, 41.677296, 4.8379745)
+transform = Transform3D(64, 0, 0, 0, 64, 0, 0, 0, 64, 55.148182, 41.677296, 19.684906)
 speed = 80
 
 [node name="Player" parent="." unique_id=854722899 instance=ExtResource("2_nes3m")]
