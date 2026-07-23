@@ -5,22 +5,33 @@ extends Node3D
 @onready var player_char: CharacterBody3D = $PlayerChar
 @onready var player_col: CollisionShape3D = $PlayerChar/PlayerCol
 @onready var camera_3d: Camera3D = $PlayerChar/PlayerCam/Camera3D
+@onready var raycast: RayCast3D = $PlayerChar/RayCast3D
 
 # Variables
 @export var speed: int # Determines the current speed of the character
 @export var jumpspeed : int # Determines jump speed
+@export var fallspeed : int
+var start : bool
 var defult_col: Vector3
 var col_pos: Vector3
 var jumping: bool
 var running: bool
+var air : bool
+var double_jump : int
 
 func _ready() -> void:
+	air == false
+	start = true
 	jumping = false
+	double_jump = 2
 	defult_col = player_col.shape.size
 	col_pos = player_col.position
 
 func _physics_process(delta: float) -> void:
-	player_char.velocity += player_char.get_gravity() * delta
+	if air == true:
+		player_char.velocity += player_char.get_gravity() * delta
+		if Input.is_action_just_pressed("jump") && raycast.is_colliding() == true:
+			jump()
 	if running == true:
 		player_char.velocity.x = 1 * speed
 	if jumping == true:
@@ -29,25 +40,28 @@ func _physics_process(delta: float) -> void:
 	player_char.move_and_slide()
 
 func _process(delta: float) -> void:
-	while running == false:
+	while start == true:
 		_set_ani("idle",0)
 		await get_tree().create_timer(1).timeout
 		_set_ani("running",1)
+		start = false
 		running = true
 	speed += 0.1
 	player_ani.speed_scale += (speed/100)
 	if player_ani.speed_scale > 25:
 		player_ani.speed_scale = 25
-	if Input.is_action_just_pressed("ui_right"):
+	if Input.is_action_just_pressed("ui_right") && running == true:
 		_set_ani("running",5)
-	if Input.is_action_just_pressed("ui_left"):
+	if Input.is_action_just_pressed("ui_left") && running == true:
 		_set_ani("running",-1)
-	if Input.is_action_just_pressed("jump") && jumping == false:
+	if Input.is_action_just_pressed("jump") && double_jump > 0:
 		jump()
-	if Input.is_action_just_pressed("slide"):
+	if Input.is_action_just_pressed("slide") && air == false:
 		slide()
-	#if player_char.velocity.y <= -1:
-		#falling()
+	if raycast.is_colliding() == true:
+		print("HIT!")
+		double_jump = 2
+		air = false
 		
 
 # Function for changing the player speed and current animation
@@ -71,18 +85,21 @@ func slide()->void:
 
 # Run this function when the player character jumps. It should move them upwards.
 func jump()->void:
+	air = true
 	jumping = true
+	double_jump -= 1
 	player_col.shape.size = Vector3(6,12,1)
 	_set_ani("jump", 5)
-	await player_ani.animation_finished
-	_set_ani("jump_loop",0)
-	await get_tree().create_timer(0.5).timeout
+	#await player_ani.animation_finished
+	#_set_ani("jump_loop",0)
+	await get_tree().create_timer(0.4).timeout
 	normal()
 	
 func normal() -> void:
 	player_col.shape.size = defult_col
 	player_col.position = col_pos
 	jumping = false
+	running = true
 	_set_ani("running",0)
 
 func stop() -> void:
