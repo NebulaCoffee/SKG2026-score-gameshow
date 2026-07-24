@@ -43,7 +43,7 @@ func _physics_process(delta: float) -> void:
 		running = true
 		air = true
 	speed += 0.1
-	speed_text.text = str(speed)
+	speed_text.text = "Speed: " + str(speed)
 	player_ani.speed_scale += (speed/100)
 	if player_ani.speed_scale > 25:
 		player_ani.speed_scale = 25
@@ -60,13 +60,16 @@ func _physics_process(delta: float) -> void:
 	if groundhit.is_colliding() == true:
 		double_jump = 2
 		air = false
+		normal()
 	if side_hit.is_colliding() == true:
 		speed -= 10
 		
 	if air == true:
 		player_char.velocity += (player_char.get_gravity()*fallspeed) * delta
 		if Input.is_action_just_pressed("jump") && groundhit.is_colliding() == true:
+			double_jump = 2
 			jump()
+	if air == false: double_jump = 2
 	if running == true:
 		player_char.velocity.x = 1 * speed
 		player_char.velocity += (player_char.get_gravity()) * delta

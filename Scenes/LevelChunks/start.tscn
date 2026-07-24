@@ -9,6 +9,10 @@
 [ext_resource type="Script" uid="uid://br6xyck80j40v" path="res://Scripts/load_next_chunk.gd" id="6_o6tyc"]
 [ext_resource type="PackedScene" uid="uid://cbflif47brcng" path="res://Scenes/LevelGeometry/world_boundary.tscn" id="7_svq3t"]
 [ext_resource type="PackedScene" uid="uid://domav2ro4dq8e" path="res://Scenes/high_score.tscn" id="8_svq3t"]
+[ext_resource type="PackedScene" uid="uid://bebw3scn72xfl" path="res://Assets/3D/BackgroundAssets/Building1.fbx" id="10_aewkd"]
+[ext_resource type="PackedScene" uid="uid://dnfbma1gmqr2g" path="res://Assets/3D/BackgroundAssets/Building2.fbx" id="11_k8g7e"]
+[ext_resource type="PackedScene" uid="uid://ch5j1q8s3kesa" path="res://Scenes/LevelGeometry/Sign.tscn" id="12_udvoo"]
+[ext_resource type="PackedScene" uid="uid://4by7aj7gjcdu" path="res://Assets/3D/BackgroundAssets/Building3.fbx" id="13_41vil"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i31uf"]
 size = Vector3(1205.5303, 12.7496395, 186.81616)
@@ -63,5 +67,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 477.06635, 0, 456.61902)
 [node name="MusicStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=844280632]
 
 [node name="SFXStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=986807826]
+
+[node name="Building1" parent="." unique_id=1130737961 instance=ExtResource("10_aewkd")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 371.78726, 270.8031, -112.5318)
+
+[node name="Building2" parent="." unique_id=526759510 instance=ExtResource("11_k8g7e")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 854.2678, 226.06097, -122.46629)
+
+[node name="Sign" parent="." unique_id=472230102 instance=ExtResource("12_udvoo")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 143.8183, -17.289398, -122.160324)
+
+[node name="Building3" parent="." unique_id=694692005 instance=ExtResource("13_41vil")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 868.53375, 242.68616, -114.55373)
+
+[node name="Billboard3" parent="." unique_id=39722285 instance=ExtResource("1_o6tyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 348.03018, 199.15378, -121.48111)
 
 [connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

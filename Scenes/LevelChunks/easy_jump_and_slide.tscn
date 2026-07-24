@@ -7,6 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://kwxtqyekx6kp" path="res://Scenes/LevelGeometry/slanted_roof1.tscn" id="5_gnoef"]
 [ext_resource type="PackedScene" uid="uid://toogw0v23apm" path="res://Scenes/score_boost.tscn" id="6_go5kx"]
 [ext_resource type="PackedScene" uid="uid://cbflif47brcng" path="res://Scenes/LevelGeometry/world_boundary.tscn" id="7_an08s"]
+[ext_resource type="PackedScene" uid="uid://bebw3scn72xfl" path="res://Assets/3D/BackgroundAssets/Building1.fbx" id="8_ws67i"]
+[ext_resource type="PackedScene" uid="uid://dnfbma1gmqr2g" path="res://Assets/3D/BackgroundAssets/Building2.fbx" id="9_6ahaj"]
+[ext_resource type="PackedScene" uid="uid://ch5j1q8s3kesa" path="res://Scenes/LevelGeometry/Sign.tscn" id="10_ctse8"]
+[ext_resource type="PackedScene" uid="uid://4by7aj7gjcdu" path="res://Assets/3D/BackgroundAssets/Building3.fbx" id="11_6ahaj"]
+[ext_resource type="PackedScene" uid="uid://dbhcodxrxq1f" path="res://Assets/3D/LevelGeom/FlyingCar.fbx" id="12_n43h5"]
+[ext_resource type="PackedScene" uid="uid://bg2ye6dxdg77w" path="res://Assets/3D/LevelGeom/FlyingBus.fbx" id="13_gcijk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ws67i"]
 size = Vector3(1205.5303, 12.7496395, 186.81616)
@@ -66,5 +72,44 @@ score = 5
 
 [node name="World Boundary" parent="." unique_id=1536091004 instance=ExtResource("7_an08s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 469.9575, -288.75812, 0)
+
+[node name="Building1" parent="." unique_id=1130737961 instance=ExtResource("8_ws67i")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 371.78726, 321.54987, -112.6259)
+
+[node name="Building2" parent="." unique_id=526759510 instance=ExtResource("9_6ahaj")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 854.2678, 276.80774, -122.560394)
+
+[node name="Sign" parent="." unique_id=472230102 instance=ExtResource("10_ctse8")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 143.8183, 33.457367, -122.254425)
+
+[node name="Building3" parent="." unique_id=694692005 instance=ExtResource("11_6ahaj")]
+transform = Transform3D(2000, 0, 0, 0, 2000, 0, 0, 0, 2000, 868.53375, 293.43292, -114.64783)
+
+[node name="Billboard2" parent="." unique_id=288319736 instance=ExtResource("4_wjpvq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 355.75537, 299.71252, -137.21461)
+
+[node name="FlyingCar" parent="." unique_id=586409226 instance=ExtResource("12_n43h5")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 434.68884, 190.44469, -131.64119)
+
+[node name="FlyingCar2" parent="." unique_id=779661523 instance=ExtResource("12_n43h5")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 477.5904, 190.44469, -131.64119)
+
+[node name="FlyingCar3" parent="." unique_id=215247618 instance=ExtResource("12_n43h5")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 542.7206, 190.44469, -131.64119)
+
+[node name="FlyingCar4" parent="." unique_id=1962704388 instance=ExtResource("12_n43h5")]
+transform = Transform3D(-99.99959, 0, -0.2862537, 0, 100, 0, 0.2862537, 0, -99.99959, 549.82104, 190.44469, -157.11386)
+
+[node name="FlyingCar5" parent="." unique_id=2013838699 instance=ExtResource("12_n43h5")]
+transform = Transform3D(-99.99959, 0, -0.2862537, 0, 100, 0, 0.2862537, 0, -99.99959, 513.4778, 190.44469, -157.1898)
+
+[node name="FlyingCar6" parent="." unique_id=133394396 instance=ExtResource("12_n43h5")]
+transform = Transform3D(-99.99959, 0, -0.2862537, 0, 100, 0, 0.2862537, 0, -99.99959, 447.24286, 190.44469, -157.01038)
+
+[node name="FlyingCar7" parent="." unique_id=480467439 instance=ExtResource("12_n43h5")]
+transform = Transform3D(-99.99959, 0, -0.2862537, 0, 100, 0, 0.2862537, 0, -99.99959, 399.03687, 190.44469, -157.01038)
+
+[node name="FlyingBus3" parent="." unique_id=356024303 instance=ExtResource("13_gcijk")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 498.68326, 196.51529, -124.08529)
 
 [connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

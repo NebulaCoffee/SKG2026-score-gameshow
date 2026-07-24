@@ -4,7 +4,7 @@ extends Node3D
 const MAT_FOL = "res://Assets/3D/Textures/billboard_mats/"
 
 func _ready() -> void:
-	match randi_range(0,3):
+	match randi_range(0,4):
 		0:load_texture(MAT_FOL + "mecha.tres")
 		1:load_texture(MAT_FOL + "nebula.tres")
 		2:load_texture(MAT_FOL + "skull.tres")

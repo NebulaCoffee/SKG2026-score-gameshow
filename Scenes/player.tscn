@@ -348,7 +348,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9444275, -3.3834496, 0)
 shape = SubResource("BoxShape3D_ut623")
 
 [node name="GroundHit" type="RayCast3D" parent="PlayerChar" unique_id=236881161]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.02203, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12.818842, 0)
 collide_with_areas = true
 
 [node name="SideHit" type="RayCast3D" parent="PlayerChar" unique_id=1220952008]
