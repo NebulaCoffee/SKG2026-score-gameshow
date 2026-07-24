@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://bnj2e53ge1fyh" path="res://Scenes/LevelGeometry/slanted_roof2.tscn" id="3_an08s"]
 [ext_resource type="PackedScene" uid="uid://c3t04cylur1gh" path="res://Scenes/LevelGeometry/Billboard.tscn" id="4_wjpvq"]
 [ext_resource type="PackedScene" uid="uid://kwxtqyekx6kp" path="res://Scenes/LevelGeometry/slanted_roof1.tscn" id="5_gnoef"]
+[ext_resource type="PackedScene" uid="uid://toogw0v23apm" path="res://Scenes/score_boost.tscn" id="6_go5kx"]
+[ext_resource type="PackedScene" uid="uid://cbflif47brcng" path="res://Scenes/LevelGeometry/world_boundary.tscn" id="7_an08s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ws67i"]
 size = Vector3(1205.5303, 12.7496395, 186.81616)
@@ -46,5 +48,23 @@ transform = Transform3D(-0.4, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 
 
 [node name="SlantedRoof5" parent="." unique_id=37621312 instance=ExtResource("5_gnoef")]
 transform = Transform3D(-0.5, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 903.952, 0.53289235, 0)
+
+[node name="ScoreBoost4" parent="." unique_id=263407822 instance=ExtResource("6_go5kx")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 1, 413.79, 43.738, 0)
+score = 50
+
+[node name="ScoreBoost5" parent="." unique_id=1894628096 instance=ExtResource("6_go5kx")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 1, 232.545, 9.374, 0)
+
+[node name="ScoreBoost6" parent="." unique_id=604216614 instance=ExtResource("6_go5kx")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 1, 111.827, 148.016, 0)
+score = 100
+
+[node name="ScoreBoost7" parent="." unique_id=2099954684 instance=ExtResource("6_go5kx")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 1, 672.5148, 2.035492, 0)
+score = 5
+
+[node name="World Boundary" parent="." unique_id=1536091004 instance=ExtResource("7_an08s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 469.9575, -288.75812, 0)
 
 [connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

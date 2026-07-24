@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cbflif47brcng"]
+
+[ext_resource type="Script" uid="uid://rj5vvt3gh5hx" path="res://Scripts/world_boundary.gd" id="1_y3c1c"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ganen"]
+
+[node name="World Boundary" type="Area3D" unique_id=1536091004]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_y3c1c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=203227792]
+shape = SubResource("WorldBoundaryShape3D_ganen")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

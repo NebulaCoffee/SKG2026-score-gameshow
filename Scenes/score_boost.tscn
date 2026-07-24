@@ -3,14 +3,24 @@
 [ext_resource type="Script" uid="uid://d20uj0p8fyoit" path="res://Scripts/score_boost.gd" id="1_fyido"]
 [ext_resource type="FontFile" uid="uid://bygjkoh3ru3lu" path="res://Assets/Fonts/PixelOperator8.ttf" id="2_mq16y"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_vgqql"]
+size = Vector3(0.3666687, 0.15924072, 14.044769)
+
 [node name="ScoreBoost" type="Node3D" unique_id=263407822]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("1_fyido")
+score = 10
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1095564163]
+collision_layer = 5
+collision_mask = 5
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2057474747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002609253, 0.0022888184, -0.014785767)
+shape = SubResource("BoxShape3D_vgqql")
 
 [node name="ScoreText" type="Label3D" parent="." unique_id=2091766020]
+modulate = Color(0.8193326, 4.1777494e-05, 0.6090955, 1)
 text = "100"
 font = ExtResource("2_mq16y")
 

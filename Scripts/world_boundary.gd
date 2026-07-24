@@ -1,6 +1,6 @@
 extends Area3D
 
-
+@onready var player: Node3D = $"../Player"
 
 func _on_area_entered(area: Area3D) -> void:
 	print(area)

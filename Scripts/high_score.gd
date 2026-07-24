@@ -32,6 +32,7 @@ func update_score(newscore : int) ->void:
 func _process(delta: float) -> void:
 	await get_tree().create_timer(1).timeout
 	start = true
+	update_score(Globals.current_score)
 
 func _on_timer_timeout() -> void:
 	Globals.current_score += 1

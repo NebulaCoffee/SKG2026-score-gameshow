@@ -119,12 +119,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010587692, 0.025554657, -0.
 shape = SubResource("BoxShape3D_ganen")
 
 [node name="scorebg" type="Sprite3D" parent="CharacterBody3D" unique_id=667663512]
-transform = Transform3D(47.694916, 0, 0, 0, 16.195492, 0, 0, 0, 1, 0, 0.04827755, -0.02036541)
+transform = Transform3D(47.694916, 0, 0, 0, 16.195492, 0, 0, 0, 1, 0, 0.04827755, -0.03466753)
 modulate = Color(4.3317675e-07, 0.21096048, 0.2119903, 1)
 texture = SubResource("CanvasTexture_ut623")
 
 [node name="Score" type="Label3D" parent="CharacterBody3D" unique_id=66883555]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.052095726, -0.010033239)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.052095726, -0.013188038)
 texture_filter = 0
 text = "000000000"
 font_size = 16
