@@ -27,6 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112.336914, 96.5298, 0)
 
 [node name="Player" parent="." unique_id=1916690834 instance=ExtResource("6_6t7n2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.736343, 23.536617, 0)
+fallspeed = 20
 
 [node name="FlyingBus" parent="." unique_id=197974158 instance=ExtResource("2_i31uf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 572.221, 11.424, 0)
@@ -60,6 +61,9 @@ shape = SubResource("WorldBoundaryShape3D_ganen")
 
 [node name="HighScore" parent="." unique_id=827438343 instance=ExtResource("8_svq3t")]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 1, 238.5929, 69.50528, 17.23877)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1688735498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 477.06635, 0, 456.61902)
 
 [connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
 [connection signal="area_entered" from="World Boundary" to="World Boundary" method="_on_area_entered"]

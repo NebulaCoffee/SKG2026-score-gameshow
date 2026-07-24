@@ -31,18 +31,6 @@ func _ready() -> void:
 	col_pos = player_col.position
 
 func _physics_process(delta: float) -> void:
-	if air == true:
-		player_char.velocity += (player_char.get_gravity()*fallspeed) * delta
-		if Input.is_action_just_pressed("jump") && groundhit.is_colliding() == true:
-			jump()
-	if running == true:
-		player_char.velocity.x = 1 * speed
-	if jumping == true:
-		player_char.velocity.y = jumpspeed
-	
-	player_char.move_and_slide()
-
-func _process(delta: float) -> void:
 	while start == true:
 		_set_ani("idle",0)
 		await get_tree().create_timer(1).timeout
@@ -69,6 +57,16 @@ func _process(delta: float) -> void:
 	if side_hit.is_colliding() == true:
 		speed -= 10
 		
+	if air == true:
+		player_char.velocity += (player_char.get_gravity()*fallspeed) * delta
+		if Input.is_action_just_pressed("jump") && groundhit.is_colliding() == true:
+			jump()
+	if running == true:
+		player_char.velocity.x = 1 * speed
+	if jumping == true:
+		player_char.velocity.y = jumpspeed
+	
+	player_char.move_and_slide()
 
 # Function for changing the player speed and current animation
 func _set_ani(ani : String, spd : int)->void:

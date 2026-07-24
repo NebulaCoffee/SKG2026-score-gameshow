@@ -1,1 +1,4 @@
-res://Scenes/LevelChunks/easy_jump_and_slide.tscn
+res://Scenes/LevelChunks/start.tscn
+res://Scripts/world_boundary.gd
+res://Scenes/player.tscn
+res://Scripts/player.gd
