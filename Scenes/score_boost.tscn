@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://bygjkoh3ru3lu" path="res://Assets/Fonts/PixelOperator8.ttf" id="2_mq16y"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vgqql"]
-size = Vector3(0.3666687, 0.15924072, 14.044769)
+size = Vector3(0.3666687, 0.15924072, 185.6376)
 
 [node name="ScoreBoost" type="Node3D" unique_id=263407822]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 1, 0, 0, 0)
@@ -16,7 +16,7 @@ collision_layer = 5
 collision_mask = 5
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2057474747]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002609253, 0.0022888184, -0.014785767)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002609253, 0.0022888184, -43.65792)
 shape = SubResource("BoxShape3D_vgqql")
 
 [node name="ScoreText" type="Label3D" parent="." unique_id=2091766020]

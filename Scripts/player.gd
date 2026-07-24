@@ -69,6 +69,7 @@ func _physics_process(delta: float) -> void:
 			jump()
 	if running == true:
 		player_char.velocity.x = 1 * speed
+		player_char.velocity += (player_char.get_gravity()) * delta
 	if jumping == true:
 		player_char.velocity.y = jumpspeed
 	
@@ -109,6 +110,7 @@ func normal() -> void:
 	player_col.shape.size = defult_col
 	player_col.position = col_pos
 	fallspeed = 2
+	
 	jumping = false
 	running = true
 	_set_ani("running",0)
