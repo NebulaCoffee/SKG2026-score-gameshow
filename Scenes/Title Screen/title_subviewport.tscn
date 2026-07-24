@@ -7,8 +7,13 @@
 [ext_resource type="StyleBox" uid="uid://d0w5p4ur1vjd0" path="res://new_style_box_flat.tres" id="5_4rxic"]
 [ext_resource type="Texture2D" uid="uid://1ldb1pofnli3" path="res://Assets/2D/DevLogos.png" id="5_p6m1b"]
 [ext_resource type="Script" uid="uid://drhux5re3d88r" path="res://Scenes/Title Screen/main_menu_control.gd" id="6_34fli"]
+[ext_resource type="Theme" uid="uid://dfyw1wswqc160" path="res://themes/button.tres" id="7_y37du"]
 [ext_resource type="LabelSettings" uid="uid://b5ejruhag8iym" path="res://settings_label.tres" id="8_dgxmp"]
 [ext_resource type="Theme" uid="uid://cvxbrbw5yageg" path="res://main_theme.tres" id="9_njgyr"]
+[ext_resource type="Theme" uid="uid://cm2hd6v7a4h2m" path="res://themes/score.tres" id="11_4k7h7"]
+[ext_resource type="Texture2D" uid="uid://bqmfk58mm03kq" path="res://Assets/2D/speech.png" id="11_kume8"]
+[ext_resource type="Texture2D" uid="uid://c6hhnrei3vll0" path="res://Assets/2D/highscore1.png" id="13_nickd"]
+[ext_resource type="Texture2D" uid="uid://8dup54rdx68s" path="res://Assets/2D/highscore2.png" id="14_di5o6"]
 
 [sub_resource type="GDScript" id="GDScript_unoo8"]
 script/source = "extends AudioStreamPlayer
@@ -23,10 +28,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 "
-
-[sub_resource type="Theme" id="Theme_ae8te"]
-default_font = ExtResource("2_unoo8")
-default_font_size = 12
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rxic"]
 bg_color = Color(0.1882353, 0.15686275, 0.42745098, 1)
@@ -54,6 +55,12 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 1
 corner_detail = 6
 expand_margin_top = 4.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ganen"]
+frames = 2
+frame_0/texture = ExtResource("13_nickd")
+frame_1/texture = ExtResource("14_di5o6")
+frame_1/duration = 1.0
 
 [sub_resource type="Gradient" id="Gradient_5xxrb"]
 offsets = PackedFloat32Array(0, 0.99291784)
@@ -149,7 +156,7 @@ grow_vertical = 0
 
 [node name="PlayButton" type="Button" parent="CanvasLayer/MainMenuControl/VBoxContainer" unique_id=1335434609]
 layout_mode = 2
-theme = SubResource("Theme_ae8te")
+theme = ExtResource("7_y37du")
 theme_type_variation = &"FlatButton"
 theme_override_colors/font_color = Color(1, 0.9254902, 0.5137255, 1)
 theme_override_colors/font_focus_color = Color(1, 0.9882353, 0.78431374, 1)
@@ -193,6 +200,58 @@ horizontal_alignment = 1
 layout_mode = 2
 theme = ExtResource("9_njgyr")
 value = 100.0
+
+[node name="Bubble" type="NinePatchRect" parent="CanvasLayer/MainMenuControl" unique_id=762578365]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 70.0
+offset_right = 249.0
+offset_bottom = 97.0
+texture = ExtResource("11_kume8")
+region_rect = Rect2(1, 1, 29, 21)
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 8
+patch_margin_bottom = 5
+
+[node name="Instructions" type="RichTextLabel" parent="CanvasLayer/MainMenuControl/Bubble" unique_id=857599147]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 154.0
+offset_bottom = 22.0
+theme = ExtResource("11_4k7h7")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 4
+text = "Welcome to the game of a lifetime, where you get to chase down me! Your host! Score Guy! Get the highest score and earn your freedom! Lose... And you get to play again!
+
+"
+fit_content = true
+
+[node name="Controls" type="RichTextLabel" parent="CanvasLayer/MainMenuControl" unique_id=1131628533]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 64.0
+offset_right = 66.0
+offset_bottom = 89.0
+theme = ExtResource("11_4k7h7")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 4
+text = "Controls:
+A/X/Space: Jump
+B/O/Shift: Slide
+Left: Slow down
+Right: Speed up"
+fit_content = true
+
+[node name="Host" type="TextureRect" parent="CanvasLayer/MainMenuControl" unique_id=403376739]
+layout_mode = 0
+offset_left = 253.0
+offset_top = 101.0
+offset_right = 292.0
+offset_bottom = 141.5
+texture = SubResource("AnimatedTexture_ganen")
+expand_mode = 1
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=583593130]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, -15.589066)

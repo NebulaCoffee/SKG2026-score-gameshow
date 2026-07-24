@@ -4,6 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://dhfgafhl3eefh" path="res://Assets/2D/background.png" id="2_2206h"]
 [ext_resource type="Texture2D" uid="uid://ctj25oujupmrk" path="res://Assets/2D/scorebg.png" id="2_mlnkq"]
 [ext_resource type="Theme" uid="uid://cm2hd6v7a4h2m" path="res://themes/score.tres" id="3_2206h"]
+[ext_resource type="Theme" uid="uid://dfyw1wswqc160" path="res://themes/button.tres" id="5_2206h"]
+[ext_resource type="Texture2D" uid="uid://bqmfk58mm03kq" path="res://Assets/2D/speech.png" id="6_0ir4p"]
+[ext_resource type="Texture2D" uid="uid://c6hhnrei3vll0" path="res://Assets/2D/highscore1.png" id="7_2xiu5"]
+[ext_resource type="Texture2D" uid="uid://8dup54rdx68s" path="res://Assets/2D/highscore2.png" id="8_7ebai"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_836qt"]
+frames = 2
+frame_0/texture = ExtResource("7_2xiu5")
+frame_1/texture = ExtResource("8_7ebai")
+frame_1/duration = 1.0
 
 [node name="High Score Screen" type="Node" unique_id=1396435410]
 script = ExtResource("1_w41t5")
@@ -138,8 +148,40 @@ fit_content = true
 offset_left = 126.0
 offset_top = 107.0
 offset_right = 221.0
-offset_bottom = 138.0
-theme = ExtResource("3_2206h")
+offset_bottom = 128.0
+theme = ExtResource("5_2206h")
 text = "Play Again?"
+
+[node name="Bubble" type="NinePatchRect" parent="CanvasLayer" unique_id=948068812]
+offset_left = 99.0
+offset_top = 3.0
+offset_right = 259.0
+offset_bottom = 30.0
+texture = ExtResource("6_0ir4p")
+region_rect = Rect2(1, 1, 29, 21)
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 8
+patch_margin_bottom = 5
+
+[node name="Text" type="RichTextLabel" parent="CanvasLayer/Bubble" unique_id=2119509800]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 154.0
+offset_bottom = 22.0
+theme = ExtResource("3_2206h")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 4
+text = "Nice try! Unfortunately your score is really bad! Try again!"
+fit_content = true
+
+[node name="Host" type="TextureRect" parent="CanvasLayer" unique_id=718947665]
+offset_left = 263.0
+offset_top = 34.0
+offset_right = 302.0
+offset_bottom = 74.5
+texture = SubResource("AnimatedTexture_836qt")
+expand_mode = 1
 
 [connection signal="pressed" from="CanvasLayer/PlayAgain" to="." method="_on_play_again_pressed"]

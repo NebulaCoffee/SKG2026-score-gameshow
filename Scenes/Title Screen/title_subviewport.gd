@@ -112,6 +112,7 @@ func _process(delta):
 			music_stream_player.play()
 			idle_animation_begun = true
 			main_menu_control.visible = true
+			$CanvasLayer/MainMenuControl/VBoxContainer/PlayButton.grab_focus()
 		
 		for i in titles.size():
 			var title = titles[i]
