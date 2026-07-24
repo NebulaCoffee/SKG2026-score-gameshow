@@ -16,12 +16,14 @@ func _ready() -> void:
 	var sindex = 5
 	if scores[4][1] < Globals.current_score:
 		scores[4][1] = Globals.current_score + 100
-		
 	scores.append(["Runner 42",Globals.current_score])
 	scores.sort_custom(sort_ascending)
 	for i in scores:
 		scorer_container.get_child(count).text = str(i[0])
 		score_container.get_child(count).text = str(i[1])
+		if i[0] == "Runner 42":
+			scorer_container.get_child(count).add_theme_color_override("default_color", Color(0.929, 0.0, 0.657, 1.0))
+			score_container.get_child(count).add_theme_color_override("default_color", Color(0.929, 0.0, 0.657, 1.0))
 		count -= 1
 	if Globals.current_score > 100:
 		text.text = "Well, you beat the rookie at least!"
