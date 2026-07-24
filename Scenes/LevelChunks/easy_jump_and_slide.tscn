@@ -50,10 +50,10 @@ transform = Transform3D(0.6, 0, 0, 0, -1, 0, 0, 0, 1, 629.003, 10.197, 0)
 transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 745.9866, -4.210579, 0)
 
 [node name="SlantedRoof1" parent="." unique_id=656043249 instance=ExtResource("5_gnoef")]
-transform = Transform3D(-0.4, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 1000.49164, 0.53289235, 0)
+transform = Transform3D(-0.4, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 1005.80646, 0.53289235, 0)
 
 [node name="SlantedRoof5" parent="." unique_id=37621312 instance=ExtResource("5_gnoef")]
-transform = Transform3D(-0.5, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 903.952, 0.53289235, 0)
+transform = Transform3D(-0.5, 0, 0, 0, 0.3, -1.509958e-07, 0, 4.5298744e-08, 1, 888.1516, -4.5604343, 0)
 
 [node name="ScoreBoost4" parent="." unique_id=263407822 instance=ExtResource("6_go5kx")]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 1, 413.79, 43.738, 0)

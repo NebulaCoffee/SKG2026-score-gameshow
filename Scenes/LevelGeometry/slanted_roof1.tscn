@@ -12,4 +12,4 @@ transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 123.87705, 0, 0)
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="SlantedRoof1/StaticBody3D" unique_id=509071163]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.015)
 depth = 0.075
-polygon = PackedVector2Array(-0.12242446, -0.0015473857, 0.12314199, 0.069152795, 0.12289861, -0.094211146, -0.122745104, -0.09558908)
+polygon = PackedVector2Array(-0.12242446, -0.0015473857, 0.12314199, 0.069152795, 0.133, -0.094, -0.122745104, -0.09558908)
