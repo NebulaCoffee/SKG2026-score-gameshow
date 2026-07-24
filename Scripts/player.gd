@@ -10,6 +10,10 @@ extends Node3D
 @onready var jump_timer: Timer = $JumpTimer
 @onready var speed_text: RichTextLabel = $PlayerChar/PlayerCam/Camera3D/CanvasLayer/Speed
 
+# Audio
+@onready var sfx_stream_player: AudioStreamPlayer = AudioManager.sfx_player
+@onready var sfx_jump = load("res://Assets/Audio/SFX/jump.mp3")
+
 # Variables
 @export var speed: int # Determines the current speed of the character
 @export var jumpspeed : int # Determines jump speed
@@ -49,6 +53,8 @@ func _physics_process(delta: float) -> void:
 		_set_ani("running",-1)
 	if Input.is_action_just_pressed("jump") && double_jump > 0:
 		jump()
+		sfx_stream_player.stream = sfx_jump
+		sfx_stream_player.play()
 	if Input.is_action_just_pressed("slide"):
 		slide()
 	if groundhit.is_colliding() == true:

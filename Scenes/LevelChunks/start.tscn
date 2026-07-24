@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bnnnlbiueqq2d"]
 
 [ext_resource type="PackedScene" uid="uid://c3t04cylur1gh" path="res://Scenes/LevelGeometry/Billboard.tscn" id="1_o6tyc"]
+[ext_resource type="Script" uid="uid://5q2to5e44n1m" path="res://Scenes/LevelChunks/start.gd" id="1_y72a3"]
 [ext_resource type="PackedScene" uid="uid://b4y88l2sque1e" path="res://Scenes/LevelGeometry/flying_bus.tscn" id="2_i31uf"]
 [ext_resource type="PackedScene" uid="uid://bf8lnk3j0k0u6" path="res://Scenes/LevelGeometry/flying_car.tscn" id="3_svq3t"]
 [ext_resource type="PackedScene" uid="uid://bnj2e53ge1fyh" path="res://Scenes/LevelGeometry/slanted_roof2.tscn" id="5_gsakl"]
@@ -15,6 +16,7 @@ size = Vector3(1205.5303, 12.7496395, 186.81616)
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ganen"]
 
 [node name="Start" type="Node3D" unique_id=872238276]
+script = ExtResource("1_y72a3")
 
 [node name="Car2" parent="." unique_id=2082674036 instance=ExtResource("3_svq3t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 246.39508, 8.86747, 0)
@@ -64,6 +66,10 @@ transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 1, 238.5929, 69.50528, 17.2387
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1688735498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 477.06635, 0, 456.61902)
+
+[node name="MusicStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=844280632]
+
+[node name="SFXStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=986807826]
 
 [connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
 [connection signal="area_entered" from="World Boundary" to="World Boundary" method="_on_area_entered"]

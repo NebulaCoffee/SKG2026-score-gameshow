@@ -2,7 +2,7 @@ extends Control
 
 @onready var music_slider = $AudioSettingsVBoxContainer/MusicSlider
 @onready var sfx_slider = $AudioSettingsVBoxContainer/SFXSlider
-@onready var sfx_stream_player = get_node("/root/TitleSubviewport/SFXStreamPlayer")
+@onready var sfx_stream_player = AudioManager.sfx_player
 
 var sfx_pop = load("res://Assets/Audio/SFX/pop-rimshot.mp3")
 

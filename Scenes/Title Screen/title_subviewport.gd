@@ -10,13 +10,14 @@ extends Node3D
 @onready var splash_sprite = $SplashSprite
 @onready var dev_logo_sprite = $DevLogoSprite
 
-@onready var music_stream_player = $MusicStreamPlayer
-@onready var sfx_stream_player = $SFXStreamPlayer
+@onready var music_stream_player = AudioManager.music_player
+@onready var sfx_stream_player = AudioManager.sfx_player
 
 # Load SFX.
 var sfx_audience_cheer = load("res://Assets/Audio/SFX/audience-cheer.mp3")
 var sfx_audience_chatter = load("res://Assets/Audio/SFX/crowd-chatter.mp3")
 var sfx_pop = load("res://Assets/Audio/SFX/pop-rimshot.mp3")
+var music_jingle = load("res://Assets/Audio/Music/title_screen.mp3")
 var music_menu = load("res://Assets/Audio/Music/menu_music.mp3")
 
 # Set where we want the title parts to end up.
@@ -52,6 +53,7 @@ func _ready():
 func start_sequence():
 	sfx_stream_player.stop()
 	sfx_stream_player.stream = sfx_audience_cheer
+	music_stream_player.stream = music_jingle
 	music_stream_player.play()
 	await get_tree().create_timer(2).timeout
 	sfx_stream_player.play()
@@ -128,4 +130,4 @@ func _process(delta):
 
 
 func _on_play_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/main.tscn")
+	get_tree().change_scene_to_file("res://Scenes/LevelChunks/start.tscn")

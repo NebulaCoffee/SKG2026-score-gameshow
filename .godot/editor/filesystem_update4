@@ -2,3 +2,8 @@ res://Scenes/LevelChunks/start.tscn
 res://Scripts/world_boundary.gd
 res://Scenes/player.tscn
 res://Scripts/player.gd
+res://Scripts/audiomanager.gd
+res://Scenes/Title Screen/title_subviewport.gd
+res://Scenes/main_menu.tscn
+res://Scenes/Title Screen/main_menu_control.gd
+res://Scenes/LevelChunks/start.gd
