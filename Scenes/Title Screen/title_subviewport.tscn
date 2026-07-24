@@ -210,12 +210,14 @@ offset_bottom = 89.0
 theme = ExtResource("11_4k7h7")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 4
-text = "Controls:
+text = "Controls (Controller/ PC):
 A/X/Space: Jump
 B/O/Shift: Slide
-A/Left: Slow down
-D/Right: Speed up"
+Left/A: Slow down
+Right/D: Speed up"
 fit_content = true
+scroll_active = false
+justification_flags = 161
 
 [node name="TooltipControl" type="Control" parent="CanvasLayer" unique_id=885677682]
 visible = false

@@ -42,21 +42,23 @@ func _physics_process(delta: float) -> void:
 		start = false
 		running = true
 		air = true
-	speed += 0.1
-	speed_text.text = "Speed: " + str(speed)
-	player_ani.speed_scale += (speed/100)
-	if player_ani.speed_scale > 25:
-		player_ani.speed_scale = 25
-	if Input.is_action_just_pressed("ui_right") && running == true:
-		_set_ani("running",5)
-	if Input.is_action_just_pressed("ui_left") && running == true:
-		_set_ani("running",-1)
+	if Input.is_action_pressed("ui_right") && running == true:
+		_set_ani("running",1)
+		speed += 0.01
+	if Input.is_action_pressed("ui_left") && running == true:
+		_set_ani("running",-0.1)
+		speed -= 0.01
 	if Input.is_action_just_pressed("jump") && double_jump > 0:
 		jump()
 		sfx_stream_player.stream = sfx_jump
 		sfx_stream_player.play()
 	if Input.is_action_just_pressed("slide"):
 		slide()
+	speed += 0.1
+	speed_text.text = "Speed: " + str(speed)
+	player_ani.speed_scale += (speed/100)
+	if player_ani.speed_scale > 25:
+		player_ani.speed_scale = 25
 	if groundhit.is_colliding() == true:
 		double_jump = 2
 		air = false
