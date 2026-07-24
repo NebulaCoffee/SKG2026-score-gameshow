@@ -5,7 +5,9 @@ extends Node3D
 @onready var player_char: CharacterBody3D = $PlayerChar
 @onready var player_col: CollisionShape3D = $PlayerChar/PlayerCol
 @onready var camera_3d: Camera3D = $PlayerChar/PlayerCam/Camera3D
-@onready var raycast: RayCast3D = $PlayerChar/RayCast3D
+@onready var groundhit: RayCast3D = $PlayerChar/GroundHit
+@onready var side_hit: RayCast3D = $PlayerChar/SideHit
+@onready var jump_timer: Timer = $JumpTimer
 
 # Variables
 @export var speed: int # Determines the current speed of the character
@@ -29,8 +31,8 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if air == true:
-		player_char.velocity += player_char.get_gravity() * delta
-		if Input.is_action_just_pressed("jump") && raycast.is_colliding() == true:
+		player_char.velocity += (player_char.get_gravity()*fallspeed) * delta
+		if Input.is_action_just_pressed("jump") && groundhit.is_colliding() == true:
 			jump()
 	if running == true:
 		player_char.velocity.x = 1 * speed
@@ -56,12 +58,13 @@ func _process(delta: float) -> void:
 		_set_ani("running",-1)
 	if Input.is_action_just_pressed("jump") && double_jump > 0:
 		jump()
-	if Input.is_action_just_pressed("slide") && air == false:
+	if Input.is_action_just_pressed("slide"):
 		slide()
-	if raycast.is_colliding() == true:
-		print("HIT!")
+	if groundhit.is_colliding() == true:
 		double_jump = 2
 		air = false
+	if side_hit.is_colliding() == true:
+		speed -= 10
 		
 
 # Function for changing the player speed and current animation
@@ -76,7 +79,7 @@ func slide()->void:
 	player_col.shape.size.y = 8
 	player_col.position.y = -8
 	_set_ani("skid",2)
-	print(player_col.shape.size.y)
+	jumping = false
 	await player_ani.animation_finished
 	_set_ani("skid_loop",-1)
 	await get_tree().create_timer(1).timeout
@@ -92,8 +95,7 @@ func jump()->void:
 	_set_ani("jump", 5)
 	#await player_ani.animation_finished
 	#_set_ani("jump_loop",0)
-	await get_tree().create_timer(0.4).timeout
-	normal()
+	jump_timer.start()
 	
 func normal() -> void:
 	player_col.shape.size = defult_col
@@ -110,3 +112,8 @@ func stop() -> void:
 func falling()-> void:
 	_set_ani("falling",0)
 	#player_ani.rotation.z =-45
+
+
+func _on_jump_timer_timeout() -> void:
+	air = true
+	normal()
