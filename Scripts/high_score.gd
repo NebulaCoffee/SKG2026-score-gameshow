@@ -4,6 +4,8 @@ extends Node3D
 @export var current_score: int
 @export var speed: int
 var yspeed : int
+var xspeed : int
+@export var speedboost: int
 var start : bool
 
 # Nodes
@@ -17,12 +19,13 @@ signal score_emit(emitted_score: int)
 
 func _physics_process(delta: float) -> void:
 	if start == true:
-		character_body_3d.velocity.x = 1 * speed
+		character_body_3d.velocity.x = 1 * xspeed
 		character_body_3d.velocity.y = 1 * yspeed
 		character_body_3d.move_and_slide()
 
 func _ready() -> void:
 	start = false
+	xspeed = speed
 	_switch_dir("up")
 	update_score(current_score)
 
@@ -60,3 +63,11 @@ func load_end_scene()->void:
 
 func _on_area_3d_area_entered(area: Area3D) -> void:
 	load_end_scene()
+
+
+func _on_player_prox_area_entered(area: Area3D) -> void:
+	xspeed += speedboost
+
+
+func _on_player_prox_area_exited(area: Area3D) -> void:
+	xspeed -= speedboost

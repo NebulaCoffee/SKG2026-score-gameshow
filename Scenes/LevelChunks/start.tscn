@@ -55,6 +55,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 446, -184.51575, 0)
 
 [node name="HighScore" parent="." unique_id=827438343 instance=ExtResource("8_svq3t")]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 1, 238.5929, 69.50528, 17.23877)
+speedboost = 100
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1688735498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 477.06635, 0, 456.61902)

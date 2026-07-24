@@ -25,3 +25,8 @@ func sort_ascending(a,b):
 	if a[1] < b[1]:
 		return true
 	return false
+
+
+func _on_play_again_pressed() -> void:
+	Globals.current_score = 0
+	get_tree().change_scene_to_file("res://Scenes/LevelChunks/start.tscn")

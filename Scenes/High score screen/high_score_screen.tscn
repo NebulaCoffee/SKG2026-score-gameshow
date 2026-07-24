@@ -133,3 +133,13 @@ theme_override_colors/default_color = Color(1, 0.20392157, 0.18039216, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "00000"
 fit_content = true
+
+[node name="PlayAgain" type="Button" parent="CanvasLayer" unique_id=55690754]
+offset_left = 126.0
+offset_top = 107.0
+offset_right = 221.0
+offset_bottom = 138.0
+theme = ExtResource("3_2206h")
+text = "Play Again?"
+
+[connection signal="pressed" from="CanvasLayer/PlayAgain" to="." method="_on_play_again_pressed"]
