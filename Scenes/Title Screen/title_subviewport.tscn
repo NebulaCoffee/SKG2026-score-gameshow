@@ -201,7 +201,30 @@ layout_mode = 2
 theme = ExtResource("9_njgyr")
 value = 100.0
 
-[node name="Bubble" type="NinePatchRect" parent="CanvasLayer/MainMenuControl" unique_id=762578365]
+[node name="Controls" type="RichTextLabel" parent="CanvasLayer/MainMenuControl" unique_id=599729702]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 64.0
+offset_right = 74.0
+offset_bottom = 89.0
+theme = ExtResource("11_4k7h7")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 4
+text = "Controls:
+A/X/Space: Jump
+B/O/Shift: Slide
+A/Left: Slow down
+D/Right: Speed up"
+fit_content = true
+
+[node name="TooltipControl" type="Control" parent="CanvasLayer" unique_id=885677682]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Bubble" type="NinePatchRect" parent="CanvasLayer/TooltipControl" unique_id=845229082]
 layout_mode = 0
 offset_left = 89.0
 offset_top = 70.0
@@ -214,7 +237,7 @@ patch_margin_top = 2
 patch_margin_right = 8
 patch_margin_bottom = 5
 
-[node name="Instructions" type="RichTextLabel" parent="CanvasLayer/MainMenuControl/Bubble" unique_id=857599147]
+[node name="Instructions" type="RichTextLabel" parent="CanvasLayer/TooltipControl/Bubble" unique_id=715428372]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 2.0
@@ -228,23 +251,7 @@ text = "Welcome to the game of a lifetime, where you get to chase down me! Your 
 "
 fit_content = true
 
-[node name="Controls" type="RichTextLabel" parent="CanvasLayer/MainMenuControl" unique_id=1131628533]
-layout_mode = 0
-offset_left = 15.0
-offset_top = 64.0
-offset_right = 66.0
-offset_bottom = 89.0
-theme = ExtResource("11_4k7h7")
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 4
-text = "Controls:
-A/X/Space: Jump
-B/O/Shift: Slide
-Left: Slow down
-Right: Speed up"
-fit_content = true
-
-[node name="Host" type="TextureRect" parent="CanvasLayer/MainMenuControl" unique_id=403376739]
+[node name="Host" type="TextureRect" parent="CanvasLayer/TooltipControl" unique_id=2001201091]
 layout_mode = 0
 offset_left = 253.0
 offset_top = 101.0

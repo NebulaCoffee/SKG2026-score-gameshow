@@ -7,6 +7,7 @@ extends Node3D
 ]
 
 @onready var main_menu_control = $CanvasLayer/MainMenuControl
+@onready var tooltip_control = $CanvasLayer/TooltipControl
 @onready var splash_sprite = $SplashSprite
 @onready var dev_logo_sprite = $DevLogoSprite
 
@@ -53,6 +54,7 @@ func _ready():
 func start_sequence():
 	sfx_stream_player.stop()
 	sfx_stream_player.stream = sfx_audience_cheer
+	tooltip_control.visible = true
 	music_stream_player.stream = music_jingle
 	music_stream_player.play()
 	await get_tree().create_timer(2).timeout
