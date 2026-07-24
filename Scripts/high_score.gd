@@ -53,7 +53,7 @@ func emit_score()->void:
 	score_emit.emit(current_score)
 
 func load_end_scene()->void:
-	print("GAME OVER!")
+	Globals.current_score = Globals.current_score*2
 	get_tree().change_scene_to_file("res://Scenes/High score screen/high_score_screen.tscn")
 
 

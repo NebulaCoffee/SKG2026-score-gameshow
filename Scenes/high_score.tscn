@@ -100,7 +100,7 @@ animations = [{
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lyy7e"]
-size = Vector3(0.5032163, 0.5421829, 6.0536804)
+size = Vector3(0.5032163, 5.005602, 28.582993)
 
 [node name="HighScore" type="Node3D" unique_id=827438343]
 script = ExtResource("1_v2gce")
@@ -110,6 +110,8 @@ speed = 100
 autostart = true
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1525740006]
+collision_layer = 0
+collision_mask = 0
 motion_mode = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=338661654]
@@ -139,7 +141,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Area3D" unique_id=1825447028]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0075009763, 0.044002533, -0.019093394)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0075009763, -0.3231783, -11.28375)
 shape = SubResource("BoxShape3D_lyy7e")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

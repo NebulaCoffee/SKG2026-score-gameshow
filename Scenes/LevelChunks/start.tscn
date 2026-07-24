@@ -6,9 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://bnj2e53ge1fyh" path="res://Scenes/LevelGeometry/slanted_roof2.tscn" id="5_gsakl"]
 [ext_resource type="PackedScene" uid="uid://y6fr4t71pqff" path="res://Scenes/player.tscn" id="6_6t7n2"]
 [ext_resource type="Script" uid="uid://br6xyck80j40v" path="res://Scripts/load_next_chunk.gd" id="6_o6tyc"]
+[ext_resource type="Script" uid="uid://rj5vvt3gh5hx" path="res://Scripts/world_boundary.gd" id="7_i31uf"]
+[ext_resource type="PackedScene" uid="uid://domav2ro4dq8e" path="res://Scenes/high_score.tscn" id="8_svq3t"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i31uf"]
 size = Vector3(1205.5303, 12.7496395, 186.81616)
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ganen"]
 
 [node name="Start" type="Node3D" unique_id=872238276]
 
@@ -45,4 +49,17 @@ script = ExtResource("6_o6tyc")
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 6.5011597, 2.841746e-07, 0)
 shape = SubResource("BoxShape3D_i31uf")
 
+[node name="World Boundary" type="Area3D" parent="." unique_id=875585830]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 446, -184.51575, 0)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("7_i31uf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World Boundary" unique_id=1451988462]
+shape = SubResource("WorldBoundaryShape3D_ganen")
+
+[node name="HighScore" parent="." unique_id=827438343 instance=ExtResource("8_svq3t")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 1, 238.5929, 69.50528, 17.23877)
+
 [connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="area_entered" from="World Boundary" to="World Boundary" method="_on_area_entered"]

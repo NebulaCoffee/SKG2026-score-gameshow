@@ -8,6 +8,7 @@ extends Node3D
 @onready var groundhit: RayCast3D = $PlayerChar/GroundHit
 @onready var side_hit: RayCast3D = $PlayerChar/SideHit
 @onready var jump_timer: Timer = $JumpTimer
+@onready var speed_text: RichTextLabel = $PlayerChar/PlayerCam/Camera3D/CanvasLayer/Speed
 
 # Variables
 @export var speed: int # Determines the current speed of the character
@@ -48,7 +49,9 @@ func _process(delta: float) -> void:
 		_set_ani("running",1)
 		start = false
 		running = true
+		air = true
 	speed += 0.1
+	speed_text.text = str(speed)
 	player_ani.speed_scale += (speed/100)
 	if player_ani.speed_scale > 25:
 		player_ani.speed_scale = 25
@@ -78,6 +81,7 @@ func _set_ani(ani : String, spd : int)->void:
 func slide()->void:
 	player_col.shape.size.y = 8
 	player_col.position.y = -8
+	fallspeed = 4
 	_set_ani("skid",2)
 	jumping = false
 	await player_ani.animation_finished
@@ -100,6 +104,7 @@ func jump()->void:
 func normal() -> void:
 	player_col.shape.size = defult_col
 	player_col.position = col_pos
+	fallspeed = 2
 	jumping = false
 	running = true
 	_set_ani("running",0)
